@@ -1,0 +1,7 @@
+Wallpost:
+    first_post:
+         Person: fabio 
+         Workshop: create_dreamfish
+         date: 1234567890
+         content: |
+               The first of all posts on this matter

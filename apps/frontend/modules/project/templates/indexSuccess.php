@@ -3,19 +3,27 @@
 <table>
   <thead>
     <tr>
-      <th>Project</th>
-      <th>Title</th>
-      <th>Response wanted</th>
+      <th>Id</th>
+      <th>Project type</th>
       <th>Description</th>
+      <th>Stage</th>
+      <th>Wiki page</th>
+      <th>Contact</th>
+      <th>Created at</th>
+      <th>Updated at</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($projects as $project): ?>
     <tr>
-      <td><a href="<?php echo url_for('project/show?project_id='.$project->getProjectId()) ?>"><?php echo $project->getProjectId() ?></a></td>
-      <td><?php echo $project->getTitle() ?></td>
-      <td><?php echo $project->getResponseWanted() ?></td>
+      <td><a href="<?php echo url_for('project/show?id='.$project->getId()) ?>"><?php echo $project->getId() ?></a></td>
+      <td><?php echo $project->getProjectTypeId() ?></td>
       <td><?php echo $project->getDescription() ?></td>
+      <td><?php echo $project->getStageId() ?></td>
+      <td><?php echo $project->getWikiPage() ?></td>
+      <td><?php echo $project->getContactId() ?></td>
+      <td><?php echo $project->getCreatedAt() ?></td>
+      <td><?php echo $project->getUpdatedAt() ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

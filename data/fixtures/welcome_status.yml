@@ -1,0 +1,5 @@
+WelcomeStatus:
+     available_chat:
+         name: "Available to chat"
+     contact_me:
+         name: "Contact me"

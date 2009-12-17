@@ -1,0 +1,5 @@
+PaymentMethodAttributes:
+   card:
+      attribute_list: "card_number"
+   pal:
+     attribute_list: "paypal_email_address"

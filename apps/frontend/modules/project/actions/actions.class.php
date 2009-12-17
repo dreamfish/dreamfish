@@ -19,7 +19,7 @@ class projectActions extends sfActions
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->project = Doctrine::getTable('Project')->find(array($request->getParameter('project_id')));
+    $this->project = Doctrine::getTable('Project')->find(array($request->getParameter('id')));
     $this->forward404Unless($this->project);
   }
 
@@ -41,14 +41,14 @@ class projectActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($project = Doctrine::getTable('Project')->find(array($request->getParameter('project_id'))), sprintf('Object project does not exist (%s).', $request->getParameter('project_id')));
+    $this->forward404Unless($project = Doctrine::getTable('Project')->find(array($request->getParameter('id'))), sprintf('Object project does not exist (%s).', $request->getParameter('id')));
     $this->form = new ProjectForm($project);
   }
 
   public function executeUpdate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
-    $this->forward404Unless($project = Doctrine::getTable('Project')->find(array($request->getParameter('project_id'))), sprintf('Object project does not exist (%s).', $request->getParameter('project_id')));
+    $this->forward404Unless($project = Doctrine::getTable('Project')->find(array($request->getParameter('id'))), sprintf('Object project does not exist (%s).', $request->getParameter('id')));
     $this->form = new ProjectForm($project);
 
     $this->processForm($request, $this->form);
@@ -60,7 +60,7 @@ class projectActions extends sfActions
   {
     $request->checkCSRFProtection();
 
-    $this->forward404Unless($project = Doctrine::getTable('Project')->find(array($request->getParameter('project_id'))), sprintf('Object project does not exist (%s).', $request->getParameter('project_id')));
+    $this->forward404Unless($project = Doctrine::getTable('Project')->find(array($request->getParameter('id'))), sprintf('Object project does not exist (%s).', $request->getParameter('id')));
     $project->delete();
 
     $this->redirect('project/index');
@@ -73,7 +73,7 @@ class projectActions extends sfActions
     {
       $project = $form->save();
 
-      $this->redirect('project/edit?project_id='.$project->getProjectId());
+      $this->redirect('project/edit?id='.$project->getId());
     }
   }
 }

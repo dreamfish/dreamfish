@@ -1,0 +1,13 @@
+Good:
+   tag:
+      name: "Tags (free, comma separated)"
+   hand:
+      name: "Handmade"
+   rec:
+      name: "Recycling"
+   fair:
+      name: "Fairtrade"
+   happy:
+      name: "Happy Planet"
+   heart:
+      name: "Made with Heart"

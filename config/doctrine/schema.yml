@@ -1,7 +1,390 @@
+#config/doctrine/schema.yml
+Avatar:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      name: {type: string(255) }
+      image_file: {type: string(255) }
+
+Person:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      name: {type: string(255), notnull: true }
+      username: {type: string(255), notnull: true }
+      password: {type: string(255), notnull: true }
+      email: {type: string(255), notnull: true }
+      mobile_phone: {type: string(31) }
+      avatar_id: {type: integer }
+      url: {type: string(255) }
+      city: {type: string(63) }
+      postal_code: {type: string(15) }
+      timezone: {type: string(15) }
+      feedback: {type: string(4095) }
+      about_me: {type: string(4095) }
+      twitter: {type: string(255) }
+      payment_method_id: {type: integer }
+      chat_setting: {type: boolean, notnull: true, default: 1 }
+   relations:
+      Avatar: foreignType: one
+      PaymentMethod: foreignType: one
+   attributes:
+      export: all
+      validate: true
+
+
+WorkshopPerson:
+   actAs: { Timestampable: ~ }
+   columns:
+      workshop_id: {type: integer, primary: true }
+      person_id: {type: integer, primary: true }
+   relations:
+      Workshop: 
+         foreignAlias: WorkshopPerson
+      Person:
+         foreignAlias: WorkshopPerson
+
+
+Workshop:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      offer_type_id: {type: integer, notnull: true }
+      avatar_id: {type: string(255) } #link to image
+      description: {type: string(4095) }
+      welcome_status_id: {type: integer, notnull: true } 
+      embedded_video: {type: string(255) }
+      contact_id: {type:integer }
+      payment_method_id: {type: integer }
+   relations:
+      Avatar: foreignType: one
+      PaymentMethod: foreignType: one
+      OfferType: foreignType: one
+      WelcomeStatus: foreignType: one
+      Person: local: contact_id foreignType: one foreignAlias: Contact
+      Persons:
+         foreignAlias: Persons class: Person refClass: WorkshopPerson
+
+WelcomeStatus:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      name: {type: string(255) }
+
+OfferType:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      name: {type: string(255) }
+
+WorkshopProject:
+   actAs: { Timestampable: ~ }
+   columns:
+      workshop_id: {type: integer, primary: true }
+      project_id: {type: integer, primary: true }
+   relations:
+      Workshop: 
+         foreignAlias: WorkshopProject
+      Project:
+         foreignAlias: WorkshopProject
+
 Project:
-#  actAs: { Timestampable: ~ }  # leave out until we figure out how to set required=false
-  columns:
-    project_id: { type: integer, primary: true, autoincrement: true }
-    title: { type: string(255), notnull: true }
-    response_wanted: { type: date }
-    description: { type: string(4000) }
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      project_type_id: {type: integer, notnull: true }
+      description: {type: string(4095), notnull: true }
+      stage_id: {type: integer}
+      wiki_page: {type: string(255) }
+      contact_id: {type: integer}
+   relations:
+      ProjectType: foreignType: one
+      Stage: foreignType: one
+      Person: local: contact_id foreignType: one foreignAlias: Contact
+      Persons:
+         foreignAlias: Persons class: Person refClass: ProjectPerson 
+      Workshops:
+         foreignAlias: Workshops class: Workshop refClass: WorkshopProject
+   attributes:
+      export: all
+      validate: true
+
+ProjectType:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      name: {type: string(255) }
+
+Stage:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      name: {type: string(255) }
+
+ProjectPerson:
+   actAs: { Timestampable: ~ }
+   columns:
+      person_id: {type: integer, primary: true }
+      project_id: {type: integer, primary: true }
+   relations:
+      Person: 
+         foreignAlias: ProjectPerson 
+      Project:
+         foreignAlias: ProjectPerson 
+
+LanguagePerson:
+    actAs: { Timestampable: ~ }
+    columns:
+       person_id: {type: integer, primary: true}
+       language_id: {type: integer, primary: true}
+    relations:
+       Person:
+           foreignAlias: LanguagePerson
+       Language:
+           foreignAlias: LanguagePerson
+
+DreamfishGroup:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      dreamfish_group_type_id: {type: integer }
+      location: {type: string(255) }
+      interest: {type: string(255) }
+      contact_id: {type: integer }
+   relations:
+      DreamfishGroupType: 
+           foreignType: one
+      Person: 
+           local: contact_id 
+           foreignType: one 
+           foreignAlias: Contact
+
+DreamfishGroupType:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      name: {type: string(255) }
+
+Event:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      title: {type: string(255), notnull: true } 
+      from_date: {type: timestamp, notnull: true }
+      to_date: {type: timestamp, notnull: true }
+      description: {type: string(4095) }
+      venue_type_id: {type: integer, notnull: true }
+      venue_url: {type: string(255) }
+      city: {type: string(255) }
+      country_id: {type: integer }
+      register_url: {type: string(255) }
+      workshop_id: {type: integer }
+      contact_id: {type: integer }
+   relations:
+      VenueType: foreignType: one
+      Country: foreignType: one
+      Person: local: contact_id foreignType: one foreignAlias: Contact
+      Workshop: 
+         foreignAlias: Events
+
+Country:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      name: {type: string(255) }
+
+VenueType:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      name: {type: string(255) }
+
+Wallpost:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: {type: integer, autoincrement: true, primary: true }
+      person_id: {type: integer, notnull: true }
+      workshop_id: {type: integer, notnull: true }
+      date: {type: timestamp, notnull: true }
+      content: {type: string(65535) }
+   relations:
+      Person:
+         foreignType: one
+      Workshop: 
+         foreignAlias: Wallposts
+ 
+Workstory:
+   actAs: { Timestampable: ~ }
+   columns:
+       id: {type: integer, autoincrement: true, primary: true }
+       title: {type: string(255), notnull: true }
+       date: {type: timestamp, notnull: true }
+       person_id: {type: integer, notnull: true }
+       video_embed: {type: string(255) }
+       text: {type: string(65535) }
+   relations:
+      Person: local: person_id foreignType: one foreignAlias: Creator
+      Persons: foreignAlias: CreditPersons class: Person refClass: WorkstoryPerson
+      Workshops: foreignAlias: CreditWorkshops class: Workshop refClass: WorkstoryWorkshop
+
+WorkstoryPerson:
+   actAs: { Timestampable: ~ }
+   columns:
+      workstory_id: {type: integer, primary: true }
+      person_id: {type: integer, primary: true }
+   relations:
+      Worktstory: 
+         foreignAlias: WorkstoryPerson
+      Person:
+         foreignAlias: WorkstoryPerson
+
+WorkstoryWorkshop:
+   actAs: { Timestampable: ~ }
+   columns:
+      workstory_id: {type: integer, primary: true }
+      workshop_id: {type: integer, primary: true }
+   relations:
+      Workstory: 
+         foreignAlias: WorkstoryWorkshop
+      Workshop:
+         foreignAlias: WorkstoryWorkshop
+
+Language:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: { type: integer, autoincrement: true, primary: true }
+      name: { type: string(255), notnull: true }
+   relations:
+      Persons:
+         foreignAlias: Persons class: Person refClass: LanguagePerson 
+
+
+Skill:
+    actAs: { Timestampable: ~ }
+    columns:
+      id: { type: integer, autoincrement: true, primary: true }
+      name: { type: string(255), notnull: true }
+    relations:
+      Persons:
+         foreignAlias: Persons class: Person refClass: SkillPerson 
+      Projects:
+         foreignAlias: Projects class: Project refClass: SkillProject
+
+SkillPerson:
+   actAs: { Timestampable: ~ }
+   columns:
+      skill_id: {type: integer, primary: true }
+      person_id: {type: integer, primary: true }
+   relations:
+      Skill: 
+         foreignAlias: SkillPerson
+      Person:
+         foreignAlias: SkillPerson
+
+SkillProject:
+   actAs: { Timestampable: ~ }
+   columns:
+      skill_id: {type: integer, primary: true }
+      project_id: {type: integer, primary: true }
+   relations:
+      Skill: 
+         foreignAlias: SkillProject 
+      Project:
+         foreignAlias: RequestedSkills 
+
+Good:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: { type: integer, autoincrement: true, primary: true }
+      name: { type: string(255), notnull: true }
+   relations:
+      Projects:
+         foreignAlias: Projects class: Project refClass: GoodProject 
+
+GoodProject:
+   actAs: { Timestampable: ~ }
+   columns:
+      good_id: {type: integer, primary: true }
+      project_id: {type: integer, primary: true }
+   relations:
+      Good: 
+         foreignAlias: GoodProject
+      Project: 
+         foreignAlias: GoodProject
+
+Value:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: { type: integer, autoincrement: true, primary: true }
+      name: { type: string(255), notnull: true }
+   relations:
+      Persons:
+         foreignAlias: Persons class: Person refClass: ValuePerson
+      Projects:
+         foreignAlias: Projects class: Project refClass: ValueProject
+      Events:
+         foreignAlias: Events class: Event refClass: ValueEvent
+      Workstorys:
+         foreignAlias: Workstories class: Workstory refClass: ValueWorkstory 
+
+
+ValuePerson:
+   actAs: { Timestampable: ~ }
+   columns:
+      person_id: {type: integer, primary: true }
+      value_id: {type: integer, primary: true }
+   relations:
+      Person: 
+         foreignAlias: ValuePerson
+      Value:
+         foreignAlias: ValuePerson
+
+ValueProject:
+   actAs: { Timestampable: ~ }
+   columns:
+      project_id: {type: integer, primary: true }
+      value_id: {type: integer, primary: true }
+   relations:
+      Project: 
+         foreignAlias: ValueProject
+      Value:
+         foreignAlias: ValueProject
+
+ValueEvent:
+   actAs: { Timestampable: ~ }
+   columns:
+      event_id: {type: integer, primary: true }
+      value_id: {type: integer, primary: true }
+   relations:
+      Event: 
+         foreignAlias: ValueEvent
+      Value:
+         foreignAlias: ValueEvent
+
+ValueWorkstory:
+   actAs: { Timestampable: ~ }
+   columns:
+      workstory_id: {type: integer, primary: true }
+      value_id: {type: integer, primary: true }
+   relations:
+      Workstory: 
+         foreignAlias: ValueWorkstory
+      Value:
+         foreignAlias: ValueWorkstory
+
+PaymentMethod:
+   actAs: { Timestampable: ~ }
+   columns:
+      id: { type: integer, autoincrement: true, primary: true }
+      name: { type: string(255), notnull: true }
+      payment_method_attributes_id: {type: integer}
+   relations:
+      PaymentMethodAttributes:
+         foreignType: one
+
+PaymentMethodAttributes:
+   actAs: { Timestampable: ~ }      
+   columns:
+      id: { type: integer, autoincrement: true, primary: true }
+      attribute_list: {type: string(4095)}
+

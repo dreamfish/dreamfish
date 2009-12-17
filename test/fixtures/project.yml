@@ -1,0 +1,9 @@
+Project:
+    dreamfish_marketplace:
+       project_type_id: [services] 
+       description: |
+             Build the dreamfish marketplace
+       stage_id: [startup] 
+       wiki_page: "http://wiki.dreamfish.com"
+       contact_id: [fabio] 
+

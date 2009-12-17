@@ -1,0 +1,11 @@
+OfferType:
+    events:
+       name: "Events"
+    services:
+       name: "Services"
+    goods:
+       name: "Goods"
+    supplies:
+       name: "Supplies"
+    funding:
+       name: "Funding"

@@ -1,0 +1,10 @@
+Workstory:
+     first_story:
+         title: 'My first story'
+         date: 1234567890
+         person_id: 1
+         video_embed: 
+         text: |
+              Working for dreamfish is fun. You are contributing
+              to something big! Also, you learn new stuff, which
+              is always great.

@@ -1,0 +1,12 @@
+Event:
+    dev_meeting:
+        title: 'Developer meeting'
+        from_date: 1234567890
+        to_date: 1234567990
+        description: 'Developer meeting'
+        venue_type_id: [web]
+        venue_url: "http://etherpad.com/"
+        country_id: [it] 
+        register_url: "http://etherpad.com"
+        Workshop: create_dreamfish
+        contact_id: [fabio]

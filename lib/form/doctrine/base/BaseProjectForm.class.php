@@ -15,17 +15,25 @@ abstract class BaseProjectForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'project_id'      => new sfWidgetFormInputHidden(),
-      'title'           => new sfWidgetFormInputText(),
-      'response_wanted' => new sfWidgetFormDate(),
+      'id'              => new sfWidgetFormInputHidden(),
+      'project_type_id' => new sfWidgetFormInputText(),
       'description'     => new sfWidgetFormTextarea(),
+      'stage_id'        => new sfWidgetFormInputText(),
+      'wiki_page'       => new sfWidgetFormInputText(),
+      'contact_id'      => new sfWidgetFormInputText(),
+      'created_at'      => new sfWidgetFormDateTime(),
+      'updated_at'      => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
-      'project_id'      => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'project_id', 'required' => false)),
-      'title'           => new sfValidatorString(array('max_length' => 255)),
-      'response_wanted' => new sfValidatorDate(array('required' => false)),
-      'description'     => new sfValidatorString(array('max_length' => 4000, 'required' => false)),
+      'id'              => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
+      'project_type_id' => new sfValidatorInteger(),
+      'description'     => new sfValidatorString(array('max_length' => 4095)),
+      'stage_id'        => new sfValidatorInteger(array('required' => false)),
+      'wiki_page'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'contact_id'      => new sfValidatorInteger(array('required' => false)),
+      'created_at'      => new sfValidatorDateTime(),
+      'updated_at'      => new sfValidatorDateTime(),
     ));
 
     $this->widgetSchema->setNameFormat('project[%s]');

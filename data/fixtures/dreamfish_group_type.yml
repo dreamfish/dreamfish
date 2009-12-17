@@ -1,0 +1,5 @@
+DreamfishGroupType:
+       local:
+         name: "Local"
+       interest:
+         name: "Interest"

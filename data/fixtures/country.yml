@@ -1,0 +1,13 @@
+Country:
+    us:
+      name: "United States of America"
+    de:
+      name: "Germany"
+    it: 
+      name: "Italy"
+    ch:
+      name: "Switzerland"
+    fr:
+      name: "France"
+    br:
+      name: "Brazil"

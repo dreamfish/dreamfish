@@ -1,0 +1,47 @@
+Skill:
+   art:
+     name: "Art and Performance"
+   acct:
+     name: "Account management and sales"
+   biz:
+     name: "Business services"
+   coach:
+     name: "Coaching and mentorship"
+   comm:
+     name: "Community"
+   cons-start:
+     name: "Consulting - startups"
+   cons-small:
+     name: "Consulting - small businesses"
+   const-ngo:
+     name: "Consulting - NGO management"
+   design:
+     name: "Design"
+   eng-sw:
+     name: "Engineering - software"
+   eng-ind:
+     name: "Engineering - industrial"
+   env:
+     name: "Environmental"
+   fin:
+     name: "Finance"
+   ins:
+     name: "Insurance"
+   leg:
+     name: "Legal"
+   mark:
+     name: "Marketing and communication"
+   proj:
+     name: "Project management"
+   proc:
+     name: "Process"
+   virt-ass:
+     name: "Virtual assistance"
+   vis:
+     name: "Visual - Video, Animation and Photography"
+   well:
+     name: "Wellness"
+   web:
+     name: "Web development"
+   write:
+     name: "Writing" 
