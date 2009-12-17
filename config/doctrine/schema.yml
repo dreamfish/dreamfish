@@ -1,0 +1,7 @@
+Project:
+#  actAs: { Timestampable: ~ }  # leave out until we figure out how to set required=false
+  columns:
+    project_id: { type: integer, primary: true, autoincrement: true }
+    title: { type: string(255), notnull: true }
+    response_wanted: { type: date }
+    description: { type: string(4000) }
