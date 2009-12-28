@@ -1,4 +1,6 @@
 <?php
+// Connection Component Binding
+Doctrine_Manager::getInstance()->bindComponent('Project', 'doctrine');
 
 /**
  * BaseProject
@@ -11,11 +13,15 @@
  * @property integer $stage_id
  * @property string $wiki_page
  * @property integer $contact_id
- * @property Doctrine_Collection $WorkshopProject
- * @property Doctrine_Collection $ProjectPerson
- * @property Doctrine_Collection $RequestedSkills
+ * @property timestamp $created_at
+ * @property timestamp $updated_at
+ * @property ProjectType $ProjectType
+ * @property Stage $Stage
  * @property Doctrine_Collection $GoodProject
+ * @property Doctrine_Collection $ProjectPerson
+ * @property Doctrine_Collection $SkillProject
  * @property Doctrine_Collection $ValueProject
+ * @property Doctrine_Collection $WorkshopProject
  * 
  * @method integer             getId()              Returns the current record's "id" value
  * @method integer             getProjectTypeId()   Returns the current record's "project_type_id" value
@@ -23,22 +29,30 @@
  * @method integer             getStageId()         Returns the current record's "stage_id" value
  * @method string              getWikiPage()        Returns the current record's "wiki_page" value
  * @method integer             getContactId()       Returns the current record's "contact_id" value
- * @method Doctrine_Collection getWorkshopProject() Returns the current record's "WorkshopProject" collection
- * @method Doctrine_Collection getProjectPerson()   Returns the current record's "ProjectPerson" collection
- * @method Doctrine_Collection getRequestedSkills() Returns the current record's "RequestedSkills" collection
+ * @method timestamp           getCreatedAt()       Returns the current record's "created_at" value
+ * @method timestamp           getUpdatedAt()       Returns the current record's "updated_at" value
+ * @method ProjectType         getProjectType()     Returns the current record's "ProjectType" value
+ * @method Stage               getStage()           Returns the current record's "Stage" value
  * @method Doctrine_Collection getGoodProject()     Returns the current record's "GoodProject" collection
+ * @method Doctrine_Collection getProjectPerson()   Returns the current record's "ProjectPerson" collection
+ * @method Doctrine_Collection getSkillProject()    Returns the current record's "SkillProject" collection
  * @method Doctrine_Collection getValueProject()    Returns the current record's "ValueProject" collection
+ * @method Doctrine_Collection getWorkshopProject() Returns the current record's "WorkshopProject" collection
  * @method Project             setId()              Sets the current record's "id" value
  * @method Project             setProjectTypeId()   Sets the current record's "project_type_id" value
  * @method Project             setDescription()     Sets the current record's "description" value
  * @method Project             setStageId()         Sets the current record's "stage_id" value
  * @method Project             setWikiPage()        Sets the current record's "wiki_page" value
  * @method Project             setContactId()       Sets the current record's "contact_id" value
- * @method Project             setWorkshopProject() Sets the current record's "WorkshopProject" collection
- * @method Project             setProjectPerson()   Sets the current record's "ProjectPerson" collection
- * @method Project             setRequestedSkills() Sets the current record's "RequestedSkills" collection
+ * @method Project             setCreatedAt()       Sets the current record's "created_at" value
+ * @method Project             setUpdatedAt()       Sets the current record's "updated_at" value
+ * @method Project             setProjectType()     Sets the current record's "ProjectType" value
+ * @method Project             setStage()           Sets the current record's "Stage" value
  * @method Project             setGoodProject()     Sets the current record's "GoodProject" collection
+ * @method Project             setProjectPerson()   Sets the current record's "ProjectPerson" collection
+ * @method Project             setSkillProject()    Sets the current record's "SkillProject" collection
  * @method Project             setValueProject()    Sets the current record's "ValueProject" collection
+ * @method Project             setWorkshopProject() Sets the current record's "WorkshopProject" collection
  * 
  * @package    dfmarketplace
  * @subpackage model
@@ -50,40 +64,91 @@ abstract class BaseProject extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('project');
-        $this->hasColumn('id', 'integer', null, array(
+        $this->hasColumn('id', 'integer', 8, array(
              'type' => 'integer',
-             'autoincrement' => true,
+             'fixed' => 0,
+             'unsigned' => false,
              'primary' => true,
+             'autoincrement' => true,
+             'length' => '8',
              ));
-        $this->hasColumn('project_type_id', 'integer', null, array(
+        $this->hasColumn('project_type_id', 'integer', 8, array(
              'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
              'notnull' => true,
+             'autoincrement' => false,
+             'length' => '8',
              ));
-        $this->hasColumn('description', 'string', 4095, array(
+        $this->hasColumn('description', 'string', null, array(
              'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
              'notnull' => true,
-             'length' => '4095',
+             'autoincrement' => false,
+             'length' => '',
              ));
-        $this->hasColumn('stage_id', 'integer', null, array(
+        $this->hasColumn('stage_id', 'integer', 8, array(
              'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => '8',
              ));
         $this->hasColumn('wiki_page', 'string', 255, array(
              'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
              'length' => '255',
              ));
-        $this->hasColumn('contact_id', 'integer', null, array(
+        $this->hasColumn('contact_id', 'integer', 8, array(
              'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => '8',
              ));
-
-
-        $this->setAttribute(Doctrine_Core::ATTR_EXPORT, Doctrine_Core::EXPORT_ALL);
-        $this->setAttribute(Doctrine_Core::ATTR_VALIDATE, true);
+        $this->hasColumn('created_at', 'timestamp', 25, array(
+             'type' => 'timestamp',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => '25',
+             ));
+        $this->hasColumn('updated_at', 'timestamp', 25, array(
+             'type' => 'timestamp',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => '25',
+             ));
     }
 
     public function setUp()
     {
         parent::setUp();
-        $this->hasMany('WorkshopProject', array(
+        $this->hasOne('ProjectType', array(
+             'local' => 'project_type_id',
+             'foreign' => 'id'));
+
+        $this->hasOne('Stage', array(
+             'local' => 'stage_id',
+             'foreign' => 'id'));
+
+        $this->hasMany('GoodProject', array(
              'local' => 'id',
              'foreign' => 'project_id'));
 
@@ -91,11 +156,7 @@ abstract class BaseProject extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'project_id'));
 
-        $this->hasMany('SkillProject as RequestedSkills', array(
-             'local' => 'id',
-             'foreign' => 'project_id'));
-
-        $this->hasMany('GoodProject', array(
+        $this->hasMany('SkillProject', array(
              'local' => 'id',
              'foreign' => 'project_id'));
 
@@ -103,7 +164,8 @@ abstract class BaseProject extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'project_id'));
 
-        $timestampable0 = new Doctrine_Template_Timestampable();
-        $this->actAs($timestampable0);
+        $this->hasMany('WorkshopProject', array(
+             'local' => 'id',
+             'foreign' => 'project_id'));
     }
 }

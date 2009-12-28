@@ -13,9 +13,9 @@ abstract class BaseProjectFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'project_type_id' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'project_type_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProjectType'), 'add_empty' => true)),
       'description'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'stage_id'        => new sfWidgetFormFilterInput(),
+      'stage_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Stage'), 'add_empty' => true)),
       'wiki_page'       => new sfWidgetFormFilterInput(),
       'contact_id'      => new sfWidgetFormFilterInput(),
       'created_at'      => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
@@ -23,9 +23,9 @@ abstract class BaseProjectFormFilter extends BaseFormFilterDoctrine
     ));
 
     $this->setValidators(array(
-      'project_type_id' => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'project_type_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('ProjectType'), 'column' => 'id')),
       'description'     => new sfValidatorPass(array('required' => false)),
-      'stage_id'        => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'stage_id'        => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Stage'), 'column' => 'id')),
       'wiki_page'       => new sfValidatorPass(array('required' => false)),
       'contact_id'      => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'created_at'      => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
@@ -50,9 +50,9 @@ abstract class BaseProjectFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'id'              => 'Number',
-      'project_type_id' => 'Number',
+      'project_type_id' => 'ForeignKey',
       'description'     => 'Text',
-      'stage_id'        => 'Number',
+      'stage_id'        => 'ForeignKey',
       'wiki_page'       => 'Text',
       'contact_id'      => 'Number',
       'created_at'      => 'Date',

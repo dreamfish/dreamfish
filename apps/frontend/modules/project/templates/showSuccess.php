@@ -6,7 +6,7 @@
     </tr>
     <tr>
       <th>Project type:</th>
-      <td><?php echo $project->getProjectTypeId() ?></td>
+      <td><?php echo $project->getProjectType() ?></td>
     </tr>
     <tr>
       <th>Description:</th>
@@ -14,7 +14,7 @@
     </tr>
     <tr>
       <th>Stage:</th>
-      <td><?php echo $project->getStageId() ?></td>
+      <td><?php echo $project->getStage() ?></td>
     </tr>
     <tr>
       <th>Wiki page:</th>
