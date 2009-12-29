@@ -1,0 +1,27 @@
+<?php
+
+$messages = array(
+	'textrichditor' => 'Editor enriquecido',
+	'tog-riched_disable' => 'Desactivar editor enriquecido',
+	'tog-riched_disable_ns_main' => 'Desactivar editor enriquecido en el espacio de nombres principal',
+	'tog-riched_disable_ns_talk' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Talk}}"',
+	'tog-riched_disable_ns_user' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:User}}"',
+	'tog-riched_disable_ns_user_talk' => 'Desactivar editor enriquecido en el espacio de nombres  "{{ns:User_talk}}"',
+	'tog-riched_disable_ns_project' => 'Desactivar editor enriquecido en el espacio de nombres  "{{ns:Project}}"',
+	'tog-riched_disable_ns_project_talk' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Project_talk}}"',
+	'tog-riched_disable_ns_image' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Image}}"',
+	'tog-riched_disable_ns_image_talk' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Image_talk}}"',
+	'tog-riched_disable_ns_mediawiki' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:MediaWiki}}"',
+	'tog-riched_disable_ns_mediawiki_talk' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:MediaWiki_talk}}"',
+	'tog-riched_disable_ns_template' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Template}}"',
+	'tog-riched_disable_ns_template_talk' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Template_talk}}"',
+	'tog-riched_disable_ns_help' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Help}}"',
+	'tog-riched_disable_ns_help_talk' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Help_talk}}"',
+	'tog-riched_disable_ns_category' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Category}}"',
+	'tog-riched_disable_ns_category_talk' => 'Desactivar editor enriquecido en el espacio de nombres "{{ns:Category_talk}}"',
+	'rich_editor_new_window' => 'Abrir el editor enriquecido en una nueva ventana',
+	'tog-riched_start_disabled' => 'Empezar con el editor enriquecido desactivado',
+	'tog-riched_use_popup' => 'Abrir editor enriquecido en un popup',
+	'tog-riched_use_toggle' => 'Utilizar un selector para cambiar entre wikitext y editor enriquecido',
+	'tog-riched_toggle_remember_state' => 'Recordar la última selección del editor',
+);

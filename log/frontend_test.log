@@ -1,0 +1,24 @@
+Dec 27 08:03:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 27 08:03:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 27 08:03:42 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Dec 27 08:03:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 27 08:03:42 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 27 08:03:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 27 08:03:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 27 08:03:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.project_type_id AS p__project_type_id, p.description AS p__description, p.stage_id AS p__stage_id, p.wiki_page AS p__wiki_page, p.contact_id AS p__contact_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 27 08:03:42 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 27 08:03:42 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 27 08:03:42 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 27 08:03:42 symfony [info] {sfWebResponse} Send content (821 o)
+Dec 27 08:03:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 27 08:03:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /workshop/index with parameters array (  'module' => 'workshop',  'action' => 'index',)
+Dec 27 08:03:42 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Dec 27 08:03:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 27 08:03:42 symfony [info] {workshopActions} Call "workshopActions->executeIndex()"
+Dec 27 08:03:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 27 08:03:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 27 08:03:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT w.id AS w__id, w.offer_type_id AS w__offer_type_id, w.avatar_id AS w__avatar_id, w.description AS w__description, w.welcome_status_id AS w__welcome_status_id, w.embedded_video AS w__embedded_video, w.contact_id AS w__contact_id, w.payment_method_id AS w__payment_method_id, w.created_at AS w__created_at, w.updated_at AS w__updated_at FROM workshop w - ()
+Dec 27 08:03:42 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/workshop/templates/indexSuccess.php"
+Dec 27 08:03:42 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 27 08:03:42 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 27 08:03:42 symfony [info] {sfWebResponse} Send content (887 o)

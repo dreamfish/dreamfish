@@ -1,0 +1,13 @@
+<?php /* Smarty version 2.6.18-dev, created on 2009-10-24 04:55:19
+         compiled from wiki:Slideshare */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'wiki:Slideshare', 1, false),array('modifier', 'escape', 'wiki:Slideshare', 1, false),)), $this); ?>
+<object style="margin:0px" width="<?php echo ((is_array($_tmp=((is_array($_tmp=@$this->_tpl_vars['width'])) ? $this->_run_mod_handler('default', true, $_tmp, 425) : smarty_modifier_default($_tmp, 425)))) ? $this->_run_mod_handler('escape', true, $_tmp, 'html') : smarty_modifier_escape($_tmp, 'html')); ?>
+" height="<?php echo ((is_array($_tmp=((is_array($_tmp=@$this->_tpl_vars['height'])) ? $this->_run_mod_handler('default', true, $_tmp, 348) : smarty_modifier_default($_tmp, 348)))) ? $this->_run_mod_handler('escape', true, $_tmp, 'html') : smarty_modifier_escape($_tmp, 'html')); ?>
+"><param name="movie" value="http://static.slideshare.net/swf/ssplayer<?php echo ((is_array($_tmp=((is_array($_tmp=@$this->_tpl_vars['player'])) ? $this->_run_mod_handler('default', true, $_tmp, 2) : smarty_modifier_default($_tmp, 2)))) ? $this->_run_mod_handler('escape', true, $_tmp, 'html') : smarty_modifier_escape($_tmp, 'html')); ?>
+.swf?doc=<?php echo ((is_array($_tmp=$this->_tpl_vars['doc'])) ? $this->_run_mod_handler('escape', true, $_tmp, 'urlpathinfo') : smarty_modifier_escape($_tmp, 'urlpathinfo')); ?>
+"/><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slideshare.net/swf/ssplayer<?php echo ((is_array($_tmp=((is_array($_tmp=@$this->_tpl_vars['player'])) ? $this->_run_mod_handler('default', true, $_tmp, 2) : smarty_modifier_default($_tmp, 2)))) ? $this->_run_mod_handler('escape', true, $_tmp, 'html') : smarty_modifier_escape($_tmp, 'html')); ?>
+.swf?doc=<?php echo ((is_array($_tmp=$this->_tpl_vars['doc'])) ? $this->_run_mod_handler('escape', true, $_tmp, 'urlpathinfo') : smarty_modifier_escape($_tmp, 'urlpathinfo')); ?>
+" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="<?php echo ((is_array($_tmp=((is_array($_tmp=@$this->_tpl_vars['width'])) ? $this->_run_mod_handler('default', true, $_tmp, 425) : smarty_modifier_default($_tmp, 425)))) ? $this->_run_mod_handler('escape', true, $_tmp, 'html') : smarty_modifier_escape($_tmp, 'html')); ?>
+" height="<?php echo ((is_array($_tmp=((is_array($_tmp=@$this->_tpl_vars['height'])) ? $this->_run_mod_handler('default', true, $_tmp, 348) : smarty_modifier_default($_tmp, 348)))) ? $this->_run_mod_handler('escape', true, $_tmp, 'html') : smarty_modifier_escape($_tmp, 'html')); ?>
+"></embed></object>

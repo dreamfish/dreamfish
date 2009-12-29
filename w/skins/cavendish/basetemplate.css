@@ -1,0 +1,116 @@
+/* mozilla.org Base Template Styles
+ * Initial Design by Dave Shea
+ * Severely tweaked by David Baron
+ * Reorganized by fantasai
+ * Large Changes for new Cavendish default by Daniel Burka and Steven Garrity
+ * Modified by DaSch for MW 1.15 and WeCoWi
+ */ /* Basic Structure */
+body {
+	min-width: 610px;
+	margin: 20px;
+}
+
+#container {
+	margin: 0 auto;
+}
+
+#mBody {
+	clear: both;
+	padding: 0 0 1em 0;
+	font-size: 9pt;
+}
+
+#side {
+	float: left;
+	width: 15%;
+	margin-bottom: 1em;
+	font-size: 8pt;
+}
+
+#bodyContent {
+	float: right;
+	width: 82%;
+	margin-bottom: 1em;
+}
+
+.nomenu #bodyContent {
+	float: none;
+	width: 100%;
+}
+
+.bodyleft {
+	float: right !important;
+	width: 75% !important;
+}
+
+#bodyContent.right {
+	float: left;
+	width: 62%;
+	font-size: 9pt;
+}
+
+#side.right {
+	float: right;
+	width: 35%;
+}
+
+/* Header */
+#header {
+	margin-bottom: 1em;
+}
+
+#header ul {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+#header li {
+	display: inline;
+	padding: 0 20px 0 0;
+	margin: 0;
+	white-space: nowrap;
+	font-size: 7pt;
+}
+
+/* Sidebar */
+#getcd {
+	margin: 1em 0 0 45px;
+}
+
+/* Footer */
+#footer {
+	clear: both;
+	margin-top: 1em;
+	font-size: 7pt;
+}
+
+#footer ul {
+	margin: 0 0 1em 0;
+	padding: 0;
+	line-height: 1.5em;
+}
+
+#footer li { /*		display: inline; */
+	padding: 0 20px 0 0;
+	margin: 0;
+	white-space: nowrap;
+}
+
+#footer p {
+	margin: 0.6em 0;
+}
+
+#f-about,#f-disclaimer,#f-privacy {
+	display: inline;
+}
+
+/*accessibility tweaks*/
+.skipLink {
+	position: absolute;
+	left: -999px;
+	width: 990px;
+}
+
+hr.hide {
+	display: none;
+}

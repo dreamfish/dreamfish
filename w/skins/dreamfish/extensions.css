@@ -1,0 +1,105 @@
+/*
+* Font Style for Extensions
+
+* Poem Extension
+*/
+.poem {
+    font-family: cursive;
+    font-size: 1.1em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Cite Extension */
+ol.references {
+    font-size: 0.9em;
+}
+
+sup.reference {
+    font-size: 0.8em;
+    vertical-align: top;
+    position: relative;
+    top: -0.3em;
+    white-space: nowrap;
+}
+
+ol.references>li:target {
+    background-color: #DEF;
+}
+
+sup.reference:target {
+    background-color: #DEF;
+}
+
+/* Google Maps */
+.pmap {
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.google-map {
+    margin-bottom: 1.5em;
+    width: auto;
+}
+
+/* Semantic MediaWiki */
+table.smwtable tr.smwfooter td.sortbottom {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+table.smwtable {
+    margin: 0.5em 0.5em 0.5em 0;
+    background-color: #747f96;
+    border: 1px #AAA solid;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+table.smwtable th {
+    background-color: #BCD2EE;
+    border: 1px #747f96 solid;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    white-space: nowrap;
+}
+
+table.smwtable td {
+    border: 1px #747f96 solid;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+table.smwtable caption {
+    margin-left: inherit;
+    margin-right: inherit;
+    font-weight: bold;
+}
+
+/* Semantic Forms */
+input.createboxInput {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+input.mandatoryField {
+    border-top-color: red;
+    border-bottom-color: red;
+    border-left-color: red;
+    border-right-color: red;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-width: 2px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+select.mandatoryField {
+    color: red;
+}

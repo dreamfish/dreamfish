@@ -8,9 +8,13 @@ homepage:
 
 # generic rules
 # please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
+#default_index:
+#  url:   /:module
+#  param: { action: index }
 
-default:
-  url:   /:module/:action/*
+#default:
+#  url:   /:module/:action/*
+
+default2:
+  url: /Special:FlowDreamfish/:module/:action/*
+  param: { module: project, action: index }

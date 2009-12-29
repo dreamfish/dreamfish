@@ -1,0 +1,117 @@
+{{Extension
+|name        = ImageLink
+|status      = stable
+|type        = parser function
+|author      = [[user:jldupont|Jean-Lou Dupont]]
+|image       =
+|version     = 1.7.1
+|update      =
+|mediawiki   = 1.8.2, 1.9.3, 1.10, 1.11, 1.12
+|download    = [http://mediawiki.googlecode.com/svn/tags/ImageLink/ SVN]
+|readme      =
+|changelog   = See SVN ($Id: ImageLink.doc.wikitext 1198 2008-07-14 10:34:54Z jeanlou.dupont $)
+|description = Provides a clickable image link using an image stored in the Image namespace and an article title (which may or may not existin the database).
+|parameters  =
+|rights      =
+|example     =
+}}
+== Purpose==
+Provides a clickable image link using an image (either stored in the Image namespace or accessible through an ''interwiki'' prefix) and an article title (which may or may not existin the database).
+
+The extension also supports the ''link-less'' mode thereby enabling a ''one-stop'' solution for both ''link'' and ''link-less'' requirements.
+
+Furthermore, the extension also supports ''events'' but '''only''' on ''edit'' protected pages.
+
+Lastly, the extension provides the parser function ''#iconlink'' which provides a clickable URL with the site's favicon.ico as image.
+
+== Usage Note ==
+Please use the ''#img'' parser function instead of the older ''#imagelink'' one.
+
+== Usage ==
+=== Local Image ===
+* <nowiki>{{#imagelink: image-page-name | page name |alternate text | width | height | border }}</nowiki>
+* <nowiki>{{#img: image=image-page-name [|page=page-to-link-to] [|alt=alternate-text] [|height=height-parameter] [|width=width-parameter] [|border=border-parameter] [|title=title-parameter] [|default-image]}}</nowiki>
+
+See [http://www.w3schools.com/tags/tag_img.asp W3Schools on IMG tag] for more details.
+
+=== Link-Less option ===
+If no ''page name'' is given, then no anchor (i.e. HTML <code>< a></code> element) will be generated.
+
+=== Default Image ===
+When the parameter ''image'' points to a non-existing image page, then ''default'' parameter (if specified) is used as image page. Note that for interwiki link, this option is not supported.
+
+=== InterWiki accessible Image ===
+* <nowiki>{{#imagelink: interwiki_prefix:image-page-name | page name | alternate text | width | height | border }}</nowiki>
+* <nowiki>{{#img: image=interwiki_prefix:image-page-name ... }}</nowiki>
+
+== List of supported HTML attributes ==
+{|class=datatable
+! HTML attribute !! Notes
+|-
+| target || e.g. ''target=_blank'' for opening link in new window
+|-
+| alt
+|-
+| height
+|-
+| width
+|-
+| alt
+|-
+| title || e.g. for tooltip functionality
+|-
+| border
+|-
+| class
+|}
+
+== Event Attributes ==
+Event attributes supported: onchange, onsubmit, onreset, onselect, onsubmit, onreset, onselect, onblur, onfocus, onkeydown, onkeyup, onkeypress, onclick, ondblclick, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup.
+
+== Examples ==
+* <nowiki>{{#imagelink: New Clock.gif | Admin:Show Time | Current Time | 32 | 32 | 2 }}</nowiki>
+* <nowiki>{{#img: image=Star.png | page=Starred Page | height=100% | title=Some starred page }}</nowiki>
+* <nowiki>{{#iconlink: site=http://www.yahoo.com | domaincheck=y | target=_blank | content=YAHOO! }} </nowiki>
+
+== Dependency ==
+* [[Extension:StubManager|StubManager extension]]
+
+{{Pear|ImageLink}}
+
+== Optional Dependency ==
+The PEAR package [http://pear.php.net/package/Validate Validate] can be installed: the extension performs additional sanity check for {{#iconlink}} ''site'' parameter.
+
+<!--requires [[Extension:VersaComment]] -->
+<!--{{
+[[{{FULLPAGENAMEE}}/Tests]]
+}}-->
+
+== History ==
+{|class=datatable
+! Release !! Notes
+|-
+| 1.3.0 || Addition of parser function ''#img'' & addition of ''title'' parameter for tooltips
+|-
+| 1.4.0 || * Simplified operation (removal of ParserAfterTidy hook) * Added default image functionality
+|-
+| 1.4.1 || Minor bug fix
+|-
+| 1.5.0 || Added support for event parameters
+|-
+| 1.5.1 || Added support for unrestricted event parameters in the ''MediaWiki'' namespace
+|-
+| 1.6.0 || Added 'content' & 'target' parameters for <a>, added '#iconlink' parser function
+|-
+| 1.7.0 || Added URL fragment support i.e. page-to-link-to#section-to-link-to (issue 22)
+|-
+| 1.7.1 || Added fix for "#tab=section"
+|}
+
+== Sites using this extension ==
+* [http://jldupont.com author's web site]
+
+== Changes in Trunk ==
+* Added a ''space'' between $content and img in anchor (thanks Mitchelln)
+
+[[Category:Image map extensions]]
+[[Category:Link extensions]]
