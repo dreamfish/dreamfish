@@ -13,23 +13,23 @@ abstract class BaseProjectFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'project_type_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProjectType'), 'add_empty' => true)),
-      'description'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'stage_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Stage'), 'add_empty' => true)),
-      'wiki_page'       => new sfWidgetFormFilterInput(),
-      'contact_id'      => new sfWidgetFormFilterInput(),
-      'created_at'      => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
-      'updated_at'      => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'title'       => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'name'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'deadline'    => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'description' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'created_at'  => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'updated_at'  => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'skills_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Skill')),
     ));
 
     $this->setValidators(array(
-      'project_type_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('ProjectType'), 'column' => 'id')),
-      'description'     => new sfValidatorPass(array('required' => false)),
-      'stage_id'        => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Stage'), 'column' => 'id')),
-      'wiki_page'       => new sfValidatorPass(array('required' => false)),
-      'contact_id'      => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
-      'created_at'      => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
-      'updated_at'      => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'title'       => new sfValidatorPass(array('required' => false)),
+      'name'        => new sfValidatorPass(array('required' => false)),
+      'deadline'    => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'description' => new sfValidatorPass(array('required' => false)),
+      'created_at'  => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'updated_at'  => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'skills_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Skill', 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('project_filters[%s]');
@@ -41,6 +41,22 @@ abstract class BaseProjectFormFilter extends BaseFormFilterDoctrine
     parent::setup();
   }
 
+  public function addSkillsListColumnQuery(Doctrine_Query $query, $field, $values)
+  {
+    if (!is_array($values))
+    {
+      $values = array($values);
+    }
+
+    if (!count($values))
+    {
+      return;
+    }
+
+    $query->leftJoin('r.ProjectSkill ProjectSkill')
+          ->andWhereIn('ProjectSkill.skill_id', $values);
+  }
+
   public function getModelName()
   {
     return 'Project';
@@ -49,14 +65,14 @@ abstract class BaseProjectFormFilter extends BaseFormFilterDoctrine
   public function getFields()
   {
     return array(
-      'id'              => 'Number',
-      'project_type_id' => 'ForeignKey',
-      'description'     => 'Text',
-      'stage_id'        => 'ForeignKey',
-      'wiki_page'       => 'Text',
-      'contact_id'      => 'Number',
-      'created_at'      => 'Date',
-      'updated_at'      => 'Date',
+      'id'          => 'Number',
+      'title'       => 'Text',
+      'name'        => 'Text',
+      'deadline'    => 'Date',
+      'description' => 'Text',
+      'created_at'  => 'Date',
+      'updated_at'  => 'Date',
+      'skills_list' => 'ManyKey',
     );
   }
 }

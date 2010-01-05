@@ -16,12 +16,13 @@ class ProjectForm extends BaseProjectForm
 			$this['created_at'],
 			$this['updated_at']
 		);
-
+/*
 		$this->widgetSchema['stage_id'] = new sfWidgetFormChoice(array(
 				'choices' => Doctrine::getTable('Stage')->findAll()
 				));
     $this->widgetSchema['project_type_id'] = new sfWidgetFormChoice(array(
 				'choices' => Doctrine::getTable('ProjectType')->findAll()
 				));
-  }
+*/
+	}
 }

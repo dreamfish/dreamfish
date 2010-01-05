@@ -4880,3 +4880,704 @@ Dec 28 23:28:59 symfony [info] {sfTimerManager} Factories 54.30 ms (1)
 Dec 28 23:28:59 symfony [info] {sfTimerManager} Action "project/index" 70.79 ms (1)
 Dec 28 23:28:59 symfony [info] {sfTimerManager} Database (Doctrine) 0.04 ms (2)
 Dec 28 23:28:59 symfony [info] {sfTimerManager} View "Success" for "project/index" 28.47 ms (1)
+Dec 29 00:00:29 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 29 00:00:29 symfony [info] {myUser} Automatic user logout due to timeout
+Dec 29 00:00:29 symfony [info] {myUser} User is not authenticated
+Dec 29 00:00:29 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 29 00:00:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 29 00:00:29 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 29 00:00:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 29 00:00:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.project_type_id AS p__project_type_id, p.description AS p__description, p.stage_id AS p__stage_id, p.wiki_page AS p__wiki_page, p.contact_id AS p__contact_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 29 00:00:30 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 29 00:00:30 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:00:30 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:00:30 symfony [info] {sfFilter} render to 
+client
+Dec 29 00:00:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 29 00:00:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 29 00:00:30 symfony [info] {sfWebDebugLogger} Configuration 2.58 ms (9)
+Dec 29 00:00:30 symfony [info] {sfWebDebugLogger} Factories 220.52 ms (1)
+Dec 29 00:00:30 symfony [info] {sfWebDebugLogger} Action "project/index" 354.05 ms (1)
+Dec 29 00:00:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 29 00:00:30 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 81.79 ms (1)
+Dec 29 00:00:30 symfony [info] {sfTimerManager} Configuration 2.58 ms (9)
+Dec 29 00:00:30 symfony [info] {sfTimerManager} Factories 220.52 ms (1)
+Dec 29 00:00:30 symfony [info] {sfTimerManager} Action "project/index" 354.05 ms (1)
+Dec 29 00:00:30 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 29 00:00:30 symfony [info] {sfTimerManager} View "Success" for "project/index" 81.79 ms (1)
+Dec 29 00:01:28 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Dec 29 00:01:28 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 29 00:01:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 29 00:01:28 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Dec 29 00:01:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 29 00:01:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stage s - ()
+Dec 29 00:01:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project_type p - ()
+Dec 29 00:01:28 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Dec 29 00:01:28 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 29 00:01:28 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:01:28 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:01:28 symfony [info] {sfFilter} render to 
+client
+Dec 29 00:01:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 29 00:01:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 29 00:01:28 symfony [info] {sfWebDebugLogger} Configuration 2.03 ms (9)
+Dec 29 00:01:28 symfony [info] {sfWebDebugLogger} Factories 57.98 ms (1)
+Dec 29 00:01:28 symfony [info] {sfWebDebugLogger} Action "project/new" 130.13 ms (1)
+Dec 29 00:01:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Dec 29 00:01:28 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 37.07 ms (1)
+Dec 29 00:01:28 symfony [info] {sfWebDebugLogger} Partial "project/_form" 13.41 ms (1)
+Dec 29 00:01:28 symfony [info] {sfTimerManager} Configuration 2.03 ms (9)
+Dec 29 00:01:28 symfony [info] {sfTimerManager} Factories 57.98 ms (1)
+Dec 29 00:01:28 symfony [info] {sfTimerManager} Action "project/new" 130.13 ms (1)
+Dec 29 00:01:28 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (3)
+Dec 29 00:01:28 symfony [info] {sfTimerManager} View "Success" for "project/new" 37.07 ms (1)
+Dec 29 00:01:28 symfony [info] {sfTimerManager} Partial "project/_form" 13.41 ms (1)
+Dec 29 00:01:40 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 29 00:01:40 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 29 00:01:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 29 00:01:40 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 29 00:01:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 29 00:01:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.project_type_id AS p__project_type_id, p.description AS p__description, p.stage_id AS p__stage_id, p.wiki_page AS p__wiki_page, p.contact_id AS p__contact_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 29 00:01:40 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 29 00:01:40 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:01:40 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:01:40 symfony [info] {sfFilter} render to 
+client
+Dec 29 00:01:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 29 00:01:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 29 00:01:40 symfony [info] {sfWebDebugLogger} Configuration 1.78 ms (9)
+Dec 29 00:01:40 symfony [info] {sfWebDebugLogger} Factories 55.52 ms (1)
+Dec 29 00:01:40 symfony [info] {sfWebDebugLogger} Action "project/index" 69.31 ms (1)
+Dec 29 00:01:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 29 00:01:40 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 23.61 ms (1)
+Dec 29 00:01:40 symfony [info] {sfTimerManager} Configuration 1.78 ms (9)
+Dec 29 00:01:40 symfony [info] {sfTimerManager} Factories 55.52 ms (1)
+Dec 29 00:01:40 symfony [info] {sfTimerManager} Action "project/index" 69.31 ms (1)
+Dec 29 00:01:40 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 29 00:01:40 symfony [info] {sfTimerManager} View "Success" for "project/index" 23.61 ms (1)
+Dec 29 00:01:44 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Dec 29 00:01:44 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 29 00:01:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 29 00:01:44 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Dec 29 00:01:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 29 00:01:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.project_type_id AS p__project_type_id, p.description AS p__description, p.stage_id AS p__stage_id, p.wiki_page AS p__wiki_page, p.contact_id AS p__contact_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 29 00:01:44 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/showSuccess.php"
+Dec 29 00:01:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project_type p WHERE (p.id = ?) - (1)
+Dec 29 00:01:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stage s WHERE (s.id = ?) - (1)
+Dec 29 00:01:44 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:01:44 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:01:44 symfony [info] {sfFilter} render to 
+client
+Dec 29 00:01:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 29 00:01:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 29 00:01:44 symfony [info] {sfWebDebugLogger} Configuration 1.91 ms (9)
+Dec 29 00:01:44 symfony [info] {sfWebDebugLogger} Factories 97.00 ms (1)
+Dec 29 00:01:44 symfony [info] {sfWebDebugLogger} Action "project/show" 177.17 ms (1)
+Dec 29 00:01:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (4)
+Dec 29 00:01:44 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 165.44 ms (1)
+Dec 29 00:01:44 symfony [info] {sfTimerManager} Configuration 1.91 ms (9)
+Dec 29 00:01:44 symfony [info] {sfTimerManager} Factories 97.00 ms (1)
+Dec 29 00:01:44 symfony [info] {sfTimerManager} Action "project/show" 177.17 ms (1)
+Dec 29 00:01:44 symfony [info] {sfTimerManager} Database (Doctrine) 0.03 ms (4)
+Dec 29 00:01:44 symfony [info] {sfTimerManager} View "Success" for "project/show" 165.44 ms (1)
+Dec 29 00:01:58 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Dec 29 00:01:58 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 29 00:01:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 29 00:01:58 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Dec 29 00:01:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 29 00:01:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.project_type_id AS p__project_type_id, p.description AS p__description, p.stage_id AS p__stage_id, p.wiki_page AS p__wiki_page, p.contact_id AS p__contact_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 29 00:01:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stage s - ()
+Dec 29 00:01:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project_type p - ()
+Dec 29 00:01:59 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Dec 29 00:01:59 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 29 00:01:59 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:01:59 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 29 00:01:59 symfony [info] {sfFilter} render to 
+client
+Dec 29 00:01:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 29 00:01:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 29 00:01:59 symfony [info] {sfWebDebugLogger} Configuration 2.25 ms (9)
+Dec 29 00:01:59 symfony [info] {sfWebDebugLogger} Factories 53.25 ms (1)
+Dec 29 00:01:59 symfony [info] {sfWebDebugLogger} Action "project/edit" 126.26 ms (1)
+Dec 29 00:01:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (4)
+Dec 29 00:01:59 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 82.83 ms (1)
+Dec 29 00:01:59 symfony [info] {sfWebDebugLogger} Partial "project/_form" 33.79 ms (1)
+Dec 29 00:01:59 symfony [info] {sfTimerManager} Configuration 2.25 ms (9)
+Dec 29 00:01:59 symfony [info] {sfTimerManager} Factories 53.25 ms (1)
+Dec 29 00:01:59 symfony [info] {sfTimerManager} Action "project/edit" 126.26 ms (1)
+Dec 29 00:01:59 symfony [info] {sfTimerManager} Database (Doctrine) 0.04 ms (4)
+Dec 29 00:01:59 symfony [info] {sfTimerManager} View "Success" for "project/edit" 82.83 ms (1)
+Dec 29 00:01:59 symfony [info] {sfTimerManager} Partial "project/_form" 33.79 ms (1)
+Dec 30 07:00:53 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 30 07:00:53 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:00:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:00:53 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 30 07:00:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:00:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.project_type_id AS p__project_type_id, p.description AS p__description, p.stage_id AS p__stage_id, p.wiki_page AS p__wiki_page, p.contact_id AS p__contact_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 30 07:00:53 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 30 07:00:53 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:00:53 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:00:53 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:00:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:00:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:00:53 symfony [info] {sfWebDebugLogger} Configuration 2.38 ms (9)
+Dec 30 07:00:53 symfony [info] {sfWebDebugLogger} Factories 223.36 ms (1)
+Dec 30 07:00:53 symfony [info] {sfWebDebugLogger} Action "project/index" 309.44 ms (1)
+Dec 30 07:00:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:00:53 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 59.53 ms (1)
+Dec 30 07:00:53 symfony [info] {sfTimerManager} Configuration 2.38 ms (9)
+Dec 30 07:00:53 symfony [info] {sfTimerManager} Factories 223.36 ms (1)
+Dec 30 07:00:53 symfony [info] {sfTimerManager} Action "project/index" 309.44 ms (1)
+Dec 30 07:00:53 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:00:53 symfony [info] {sfTimerManager} View "Success" for "project/index" 59.53 ms (1)
+Dec 30 07:00:59 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Dec 30 07:00:59 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:00:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:00:59 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Dec 30 07:00:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:00:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stage s - ()
+Dec 30 07:00:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project_type p - ()
+Dec 30 07:00:59 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Dec 30 07:00:59 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:00:59 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:00:59 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:00:59 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:00:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:00:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:00:59 symfony [info] {sfWebDebugLogger} Configuration 1.72 ms (9)
+Dec 30 07:00:59 symfony [info] {sfWebDebugLogger} Factories 76.29 ms (1)
+Dec 30 07:00:59 symfony [info] {sfWebDebugLogger} Action "project/new" 259.17 ms (1)
+Dec 30 07:00:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Dec 30 07:00:59 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 47.38 ms (1)
+Dec 30 07:00:59 symfony [info] {sfWebDebugLogger} Partial "project/_form" 21.08 ms (1)
+Dec 30 07:00:59 symfony [info] {sfTimerManager} Configuration 1.72 ms (9)
+Dec 30 07:00:59 symfony [info] {sfTimerManager} Factories 76.29 ms (1)
+Dec 30 07:00:59 symfony [info] {sfTimerManager} Action "project/new" 259.17 ms (1)
+Dec 30 07:00:59 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (3)
+Dec 30 07:00:59 symfony [info] {sfTimerManager} View "Success" for "project/new" 47.38 ms (1)
+Dec 30 07:00:59 symfony [info] {sfTimerManager} Partial "project/_form" 21.08 ms (1)
+Dec 30 07:10:10 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 30 07:10:10 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:10:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:10:10 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 30 07:10:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:10:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 30 07:10:10 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 30 07:10:10 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:10:10 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:10:10 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:10:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:10:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:10:10 symfony [info] {sfWebDebugLogger} Configuration 2.10 ms (9)
+Dec 30 07:10:10 symfony [info] {sfWebDebugLogger} Factories 73.72 ms (1)
+Dec 30 07:10:10 symfony [info] {sfWebDebugLogger} Action "project/index" 91.37 ms (1)
+Dec 30 07:10:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:10:10 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 24.51 ms (1)
+Dec 30 07:10:10 symfony [info] {sfTimerManager} Configuration 2.10 ms (9)
+Dec 30 07:10:10 symfony [info] {sfTimerManager} Factories 73.72 ms (1)
+Dec 30 07:10:10 symfony [info] {sfTimerManager} Action "project/index" 91.37 ms (1)
+Dec 30 07:10:10 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:10:10 symfony [info] {sfTimerManager} View "Success" for "project/index" 24.51 ms (1)
+Dec 30 07:10:14 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Dec 30 07:10:14 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:10:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:10:14 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Dec 30 07:10:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:10:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stage s - ()
+Dec 30 07:10:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project_type p - ()
+Dec 30 07:10:14 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Dec 30 07:10:14 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:10:14 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:10:14 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:10:14 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:10:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:10:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:10:14 symfony [info] {sfWebDebugLogger} Configuration 2.22 ms (9)
+Dec 30 07:10:14 symfony [info] {sfWebDebugLogger} Factories 71.51 ms (1)
+Dec 30 07:10:14 symfony [info] {sfWebDebugLogger} Action "project/new" 156.43 ms (1)
+Dec 30 07:10:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Dec 30 07:10:14 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 44.19 ms (1)
+Dec 30 07:10:14 symfony [info] {sfWebDebugLogger} Partial "project/_form" 19.16 ms (1)
+Dec 30 07:10:14 symfony [info] {sfTimerManager} Configuration 2.22 ms (9)
+Dec 30 07:10:14 symfony [info] {sfTimerManager} Factories 71.51 ms (1)
+Dec 30 07:10:14 symfony [info] {sfTimerManager} Action "project/new" 156.43 ms (1)
+Dec 30 07:10:14 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (3)
+Dec 30 07:10:14 symfony [info] {sfTimerManager} View "Success" for "project/new" 44.19 ms (1)
+Dec 30 07:10:14 symfony [info] {sfTimerManager} Partial "project/_form" 19.16 ms (1)
+Dec 30 07:30:54 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Dec 30 07:30:54 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:30:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:30:54 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Dec 30 07:30:54 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Dec 30 07:30:54 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:30:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:30:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:30:54 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:30:54 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:30:54 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:30:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:30:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:30:54 symfony [info] {sfWebDebugLogger} Configuration 2.43 ms (9)
+Dec 30 07:30:54 symfony [info] {sfWebDebugLogger} Factories 72.38 ms (1)
+Dec 30 07:30:54 symfony [info] {sfWebDebugLogger} Action "project/new" 106.55 ms (1)
+Dec 30 07:30:54 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 85.25 ms (1)
+Dec 30 07:30:54 symfony [info] {sfWebDebugLogger} Partial "project/_form" 58.45 ms (1)
+Dec 30 07:30:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:30:55 symfony [info] {sfTimerManager} Configuration 2.43 ms (9)
+Dec 30 07:30:55 symfony [info] {sfTimerManager} Factories 72.38 ms (1)
+Dec 30 07:30:55 symfony [info] {sfTimerManager} Action "project/new" 106.55 ms (1)
+Dec 30 07:30:55 symfony [info] {sfTimerManager} View "Success" for "project/new" 85.25 ms (1)
+Dec 30 07:30:55 symfony [info] {sfTimerManager} Partial "project/_form" 58.45 ms (1)
+Dec 30 07:30:55 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:31:00 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 30 07:31:00 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:31:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:31:00 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 30 07:31:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:31:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 30 07:31:00 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 30 07:31:00 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:31:00 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:31:00 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:31:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:31:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:31:00 symfony [info] {sfWebDebugLogger} Configuration 1.85 ms (9)
+Dec 30 07:31:00 symfony [info] {sfWebDebugLogger} Factories 76.82 ms (1)
+Dec 30 07:31:00 symfony [info] {sfWebDebugLogger} Action "project/index" 98.26 ms (1)
+Dec 30 07:31:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:31:00 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 27.49 ms (1)
+Dec 30 07:31:00 symfony [info] {sfTimerManager} Configuration 1.85 ms (9)
+Dec 30 07:31:00 symfony [info] {sfTimerManager} Factories 76.82 ms (1)
+Dec 30 07:31:00 symfony [info] {sfTimerManager} Action "project/index" 98.26 ms (1)
+Dec 30 07:31:00 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:31:00 symfony [info] {sfTimerManager} View "Success" for "project/index" 27.49 ms (1)
+Dec 30 07:32:33 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 30 07:32:33 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:32:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:32:33 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 30 07:32:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:32:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 30 07:32:33 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 30 07:32:33 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:32:33 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:32:33 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:32:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:32:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:32:33 symfony [info] {sfWebDebugLogger} Configuration 2.28 ms (9)
+Dec 30 07:32:33 symfony [info] {sfWebDebugLogger} Factories 72.47 ms (1)
+Dec 30 07:32:33 symfony [info] {sfWebDebugLogger} Action "project/index" 89.25 ms (1)
+Dec 30 07:32:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:32:33 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 26.13 ms (1)
+Dec 30 07:32:33 symfony [info] {sfTimerManager} Configuration 2.28 ms (9)
+Dec 30 07:32:33 symfony [info] {sfTimerManager} Factories 72.47 ms (1)
+Dec 30 07:32:33 symfony [info] {sfTimerManager} Action "project/index" 89.25 ms (1)
+Dec 30 07:32:33 symfony [info] {sfTimerManager} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:32:33 symfony [info] {sfTimerManager} View "Success" for "project/index" 26.13 ms (1)
+Dec 30 07:32:36 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Dec 30 07:32:36 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:32:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:32:36 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Dec 30 07:32:36 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Dec 30 07:32:36 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:32:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:32:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:32:37 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:32:37 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:32:37 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:32:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:32:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:32:37 symfony [info] {sfWebDebugLogger} Configuration 2.75 ms (9)
+Dec 30 07:32:37 symfony [info] {sfWebDebugLogger} Factories 67.11 ms (1)
+Dec 30 07:32:37 symfony [info] {sfWebDebugLogger} Action "project/new" 114.85 ms (1)
+Dec 30 07:32:37 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 86.36 ms (1)
+Dec 30 07:32:37 symfony [info] {sfWebDebugLogger} Partial "project/_form" 62.57 ms (1)
+Dec 30 07:32:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:32:37 symfony [info] {sfTimerManager} Configuration 2.75 ms (9)
+Dec 30 07:32:37 symfony [info] {sfTimerManager} Factories 67.11 ms (1)
+Dec 30 07:32:37 symfony [info] {sfTimerManager} Action "project/new" 114.85 ms (1)
+Dec 30 07:32:37 symfony [info] {sfTimerManager} View "Success" for "project/new" 86.36 ms (1)
+Dec 30 07:32:37 symfony [info] {sfTimerManager} Partial "project/_form" 62.57 ms (1)
+Dec 30 07:32:37 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:33:11 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Dec 30 07:33:11 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:33:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:33:11 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Dec 30 07:33:11 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Dec 30 07:33:11 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:33:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:33:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:33:11 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:33:11 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:33:11 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:33:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:33:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:33:11 symfony [info] {sfWebDebugLogger} Configuration 2.18 ms (9)
+Dec 30 07:33:11 symfony [info] {sfWebDebugLogger} Factories 81.05 ms (1)
+Dec 30 07:33:11 symfony [info] {sfWebDebugLogger} Action "project/new" 120.03 ms (1)
+Dec 30 07:33:11 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 88.63 ms (1)
+Dec 30 07:33:11 symfony [info] {sfWebDebugLogger} Partial "project/_form" 61.84 ms (1)
+Dec 30 07:33:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:33:12 symfony [info] {sfTimerManager} Configuration 2.18 ms (9)
+Dec 30 07:33:12 symfony [info] {sfTimerManager} Factories 81.05 ms (1)
+Dec 30 07:33:12 symfony [info] {sfTimerManager} Action "project/new" 120.03 ms (1)
+Dec 30 07:33:12 symfony [info] {sfTimerManager} View "Success" for "project/new" 88.63 ms (1)
+Dec 30 07:33:12 symfony [info] {sfTimerManager} Partial "project/_form" 61.84 ms (1)
+Dec 30 07:33:12 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:37:06 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/projectskill with parameters array (  'module' => 'projectskill',  'action' => 'index',)
+Dec 30 07:37:06 symfony [info] {sfFrontWebController} Action "projectskill/index" does not exist
+Dec 30 07:37:06 symfony [err] {sfError404Exception} Action "projectskill/index" does not exist.
+Dec 30 07:37:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Dec 30 07:37:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:37:06 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Dec 30 07:37:06 symfony [info] {sfWebDebugLogger} Factories 72.06 ms (1)
+Dec 30 07:38:11 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 30 07:38:11 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:11 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 30 07:38:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 30 07:38:11 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 30 07:38:11 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:11 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:11 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:11 symfony [info] {sfWebDebugLogger} Configuration 1.97 ms (9)
+Dec 30 07:38:11 symfony [info] {sfWebDebugLogger} Factories 75.62 ms (1)
+Dec 30 07:38:11 symfony [info] {sfWebDebugLogger} Action "project/index" 85.86 ms (1)
+Dec 30 07:38:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:38:11 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 27.10 ms (1)
+Dec 30 07:38:11 symfony [info] {sfTimerManager} Configuration 1.97 ms (9)
+Dec 30 07:38:11 symfony [info] {sfTimerManager} Factories 75.62 ms (1)
+Dec 30 07:38:11 symfony [info] {sfTimerManager} Action "project/index" 85.86 ms (1)
+Dec 30 07:38:11 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:38:11 symfony [info] {sfTimerManager} View "Success" for "project/index" 27.10 ms (1)
+Dec 30 07:38:13 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Dec 30 07:38:13 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:13 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Dec 30 07:38:13 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Dec 30 07:38:13 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:38:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:38:13 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:13 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:13 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:13 symfony [info] {sfWebDebugLogger} Configuration 1.98 ms (9)
+Dec 30 07:38:13 symfony [info] {sfWebDebugLogger} Factories 77.04 ms (1)
+Dec 30 07:38:13 symfony [info] {sfWebDebugLogger} Action "project/new" 112.90 ms (1)
+Dec 30 07:38:13 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 78.33 ms (1)
+Dec 30 07:38:13 symfony [info] {sfWebDebugLogger} Partial "project/_form" 55.76 ms (1)
+Dec 30 07:38:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:38:13 symfony [info] {sfTimerManager} Configuration 1.98 ms (9)
+Dec 30 07:38:13 symfony [info] {sfTimerManager} Factories 77.04 ms (1)
+Dec 30 07:38:13 symfony [info] {sfTimerManager} Action "project/new" 112.90 ms (1)
+Dec 30 07:38:13 symfony [info] {sfTimerManager} View "Success" for "project/new" 78.33 ms (1)
+Dec 30 07:38:13 symfony [info] {sfTimerManager} Partial "project/_form" 55.76 ms (1)
+Dec 30 07:38:13 symfony [info] {sfTimerManager} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:38:18 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/create with parameters array (  'module' => 'project',  'action' => 'create',)
+Dec 30 07:38:18 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:18 symfony [info] {projectActions} Call "projectActions->executeCreate()"
+Dec 30 07:38:18 symfony [info] {projectActions} Change template to "CURRENT/new"
+Dec 30 07:38:18 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Dec 30 07:38:18 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:38:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:38:18 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:18 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:18 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:18 symfony [info] {sfWebDebugLogger} Configuration 3.71 ms (9)
+Dec 30 07:38:18 symfony [info] {sfWebDebugLogger} Factories 70.76 ms (1)
+Dec 30 07:38:18 symfony [info] {sfWebDebugLogger} Action "project/create" 105.25 ms (1)
+Dec 30 07:38:18 symfony [info] {sfWebDebugLogger} View "Success" for "project/create" 84.92 ms (1)
+Dec 30 07:38:18 symfony [info] {sfWebDebugLogger} Partial "project/_form" 59.25 ms (1)
+Dec 30 07:38:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:38:18 symfony [info] {sfTimerManager} Configuration 3.71 ms (9)
+Dec 30 07:38:18 symfony [info] {sfTimerManager} Factories 70.76 ms (1)
+Dec 30 07:38:18 symfony [info] {sfTimerManager} Action "project/create" 105.25 ms (1)
+Dec 30 07:38:18 symfony [info] {sfTimerManager} View "Success" for "project/create" 84.92 ms (1)
+Dec 30 07:38:18 symfony [info] {sfTimerManager} Partial "project/_form" 59.25 ms (1)
+Dec 30 07:38:18 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:38:25 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/create with parameters array (  'module' => 'project',  'action' => 'create',)
+Dec 30 07:38:25 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:25 symfony [info] {projectActions} Call "projectActions->executeCreate()"
+Dec 30 07:38:25 symfony [info] {projectActions} Change template to "CURRENT/new"
+Dec 30 07:38:25 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Dec 30 07:38:25 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:38:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:38:25 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:25 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:25 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:25 symfony [info] {sfWebDebugLogger} Configuration 2.05 ms (9)
+Dec 30 07:38:25 symfony [info] {sfWebDebugLogger} Factories 67.08 ms (1)
+Dec 30 07:38:25 symfony [info] {sfWebDebugLogger} Action "project/create" 148.92 ms (1)
+Dec 30 07:38:25 symfony [info] {sfWebDebugLogger} View "Success" for "project/create" 83.02 ms (1)
+Dec 30 07:38:25 symfony [info] {sfWebDebugLogger} Partial "project/_form" 58.83 ms (1)
+Dec 30 07:38:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:38:25 symfony [info] {sfTimerManager} Configuration 2.05 ms (9)
+Dec 30 07:38:25 symfony [info] {sfTimerManager} Factories 67.08 ms (1)
+Dec 30 07:38:25 symfony [info] {sfTimerManager} Action "project/create" 148.92 ms (1)
+Dec 30 07:38:25 symfony [info] {sfTimerManager} View "Success" for "project/create" 83.02 ms (1)
+Dec 30 07:38:25 symfony [info] {sfTimerManager} Partial "project/_form" 58.83 ms (1)
+Dec 30 07:38:25 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:38:27 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/create with parameters array (  'module' => 'project',  'action' => 'create',)
+Dec 30 07:38:27 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:27 symfony [info] {projectActions} Call "projectActions->executeCreate()"
+Dec 30 07:38:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:27 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO project (title, name, deadline, description) VALUES (?, ?, ?, ?) - (test, test, 2006-03-04, test)
+Dec 30 07:38:27 symfony [info] {sfFrontWebController} Redirect to "http://172.16.61.124/w/index.php/Special:FlowDreamfish/project/edit/id/1"
+Dec 30 07:38:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 30 07:38:27 symfony [info] {sfWebResponse} Send header "Location: http://172.16.61.124/w/index.php/Special:FlowDreamfish/project/edit/id/1"
+Dec 30 07:38:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:27 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (8)
+Dec 30 07:38:27 symfony [info] {sfWebDebugLogger} Factories 70.31 ms (1)
+Dec 30 07:38:27 symfony [info] {sfWebDebugLogger} Action "project/create" 149.31 ms (1)
+Dec 30 07:38:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:38:27 symfony [info] {sfWebResponse} Send content (143 o)
+Dec 30 07:38:28 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Dec 30 07:38:28 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:28 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Dec 30 07:38:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 30 07:38:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Dec 30 07:38:28 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Dec 30 07:38:28 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:38:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:38:28 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:28 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:28 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:28 symfony [info] {sfWebDebugLogger} Configuration 1.89 ms (9)
+Dec 30 07:38:28 symfony [info] {sfWebDebugLogger} Factories 66.45 ms (1)
+Dec 30 07:38:28 symfony [info] {sfWebDebugLogger} Action "project/edit" 168.89 ms (1)
+Dec 30 07:38:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (4)
+Dec 30 07:38:28 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 52.49 ms (1)
+Dec 30 07:38:28 symfony [info] {sfWebDebugLogger} Partial "project/_form" 26.70 ms (1)
+Dec 30 07:38:28 symfony [info] {sfTimerManager} Configuration 1.89 ms (9)
+Dec 30 07:38:28 symfony [info] {sfTimerManager} Factories 66.45 ms (1)
+Dec 30 07:38:28 symfony [info] {sfTimerManager} Action "project/edit" 168.89 ms (1)
+Dec 30 07:38:28 symfony [info] {sfTimerManager} Database (Doctrine) 0.04 ms (4)
+Dec 30 07:38:28 symfony [info] {sfTimerManager} View "Success" for "project/edit" 52.49 ms (1)
+Dec 30 07:38:28 symfony [info] {sfTimerManager} Partial "project/_form" 26.70 ms (1)
+Dec 30 07:38:30 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 30 07:38:30 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:30 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 30 07:38:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 30 07:38:31 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 30 07:38:31 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:31 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:31 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:31 symfony [info] {sfWebDebugLogger} Configuration 1.51 ms (9)
+Dec 30 07:38:31 symfony [info] {sfWebDebugLogger} Factories 67.75 ms (1)
+Dec 30 07:38:31 symfony [info] {sfWebDebugLogger} Action "project/index" 88.53 ms (1)
+Dec 30 07:38:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:38:31 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 34.49 ms (1)
+Dec 30 07:38:31 symfony [info] {sfTimerManager} Configuration 1.51 ms (9)
+Dec 30 07:38:31 symfony [info] {sfTimerManager} Factories 67.75 ms (1)
+Dec 30 07:38:31 symfony [info] {sfTimerManager} Action "project/index" 88.53 ms (1)
+Dec 30 07:38:31 symfony [info] {sfTimerManager} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:38:31 symfony [info] {sfTimerManager} View "Success" for "project/index" 34.49 ms (1)
+Dec 30 07:38:33 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Dec 30 07:38:33 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:33 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Dec 30 07:38:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 30 07:38:33 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/showSuccess.php"
+Dec 30 07:38:33 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:33 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:33 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:33 symfony [info] {sfWebDebugLogger} Configuration 1.84 ms (9)
+Dec 30 07:38:33 symfony [info] {sfWebDebugLogger} Factories 78.44 ms (1)
+Dec 30 07:38:33 symfony [info] {sfWebDebugLogger} Action "project/show" 103.49 ms (1)
+Dec 30 07:38:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:38:33 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 34.86 ms (1)
+Dec 30 07:38:33 symfony [info] {sfTimerManager} Configuration 1.84 ms (9)
+Dec 30 07:38:33 symfony [info] {sfTimerManager} Factories 78.44 ms (1)
+Dec 30 07:38:33 symfony [info] {sfTimerManager} Action "project/show" 103.49 ms (1)
+Dec 30 07:38:33 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Dec 30 07:38:33 symfony [info] {sfTimerManager} View "Success" for "project/show" 34.86 ms (1)
+Dec 30 07:38:36 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Dec 30 07:38:36 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:36 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Dec 30 07:38:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 30 07:38:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Dec 30 07:38:36 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Dec 30 07:38:36 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:38:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:38:36 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:36 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:36 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:36 symfony [info] {sfWebDebugLogger} Configuration 4.51 ms (9)
+Dec 30 07:38:36 symfony [info] {sfWebDebugLogger} Factories 72.97 ms (1)
+Dec 30 07:38:36 symfony [info] {sfWebDebugLogger} Action "project/edit" 225.99 ms (1)
+Dec 30 07:38:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (4)
+Dec 30 07:38:36 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 50.24 ms (1)
+Dec 30 07:38:36 symfony [info] {sfWebDebugLogger} Partial "project/_form" 25.26 ms (1)
+Dec 30 07:38:36 symfony [info] {sfTimerManager} Configuration 4.51 ms (9)
+Dec 30 07:38:36 symfony [info] {sfTimerManager} Factories 72.97 ms (1)
+Dec 30 07:38:36 symfony [info] {sfTimerManager} Action "project/edit" 225.99 ms (1)
+Dec 30 07:38:36 symfony [info] {sfTimerManager} Database (Doctrine) 0.03 ms (4)
+Dec 30 07:38:36 symfony [info] {sfTimerManager} View "Success" for "project/edit" 50.24 ms (1)
+Dec 30 07:38:36 symfony [info] {sfTimerManager} Partial "project/_form" 25.26 ms (1)
+Dec 30 07:38:39 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/update/id/1 with parameters array (  'module' => 'project',  'action' => 'update',  'id' => '1',)
+Dec 30 07:38:39 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:39 symfony [info] {projectActions} Call "projectActions->executeUpdate()"
+Dec 30 07:38:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 30 07:38:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Dec 30 07:38:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM skill s WHERE s.id IN (?) - (1)
+Dec 30 07:38:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM project p WHERE p.id = ? - (1)
+Dec 30 07:38:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name FROM skill s WHERE (s.id IN (?)) - (1)
+Dec 30 07:38:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO project_skill (skill_id, project_id) VALUES (?, ?) - (1, 1)
+Dec 30 07:38:39 symfony [info] {sfFrontWebController} Redirect to "http://172.16.61.124/w/index.php/Special:FlowDreamfish/project/edit/id/1"
+Dec 30 07:38:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 30 07:38:39 symfony [info] {sfWebResponse} Send header "Location: http://172.16.61.124/w/index.php/Special:FlowDreamfish/project/edit/id/1"
+Dec 30 07:38:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:39 symfony [info] {sfWebDebugLogger} Configuration 1.64 ms (8)
+Dec 30 07:38:39 symfony [info] {sfWebDebugLogger} Factories 80.96 ms (1)
+Dec 30 07:38:39 symfony [info] {sfWebDebugLogger} Action "project/update" 261.47 ms (1)
+Dec 30 07:38:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (7)
+Dec 30 07:38:39 symfony [info] {sfWebResponse} Send content (143 o)
+Dec 30 07:38:39 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Dec 30 07:38:40 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:40 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Dec 30 07:38:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 30 07:38:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Dec 30 07:38:40 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Dec 30 07:38:40 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:38:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:38:40 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:40 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:40 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:40 symfony [info] {sfWebDebugLogger} Configuration 2.31 ms (9)
+Dec 30 07:38:40 symfony [info] {sfWebDebugLogger} Factories 77.49 ms (1)
+Dec 30 07:38:40 symfony [info] {sfWebDebugLogger} Action "project/edit" 183.77 ms (1)
+Dec 30 07:38:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.09 ms (4)
+Dec 30 07:38:40 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 48.71 ms (1)
+Dec 30 07:38:40 symfony [info] {sfWebDebugLogger} Partial "project/_form" 24.29 ms (1)
+Dec 30 07:38:40 symfony [info] {sfTimerManager} Configuration 2.31 ms (9)
+Dec 30 07:38:40 symfony [info] {sfTimerManager} Factories 77.49 ms (1)
+Dec 30 07:38:40 symfony [info] {sfTimerManager} Action "project/edit" 183.77 ms (1)
+Dec 30 07:38:40 symfony [info] {sfTimerManager} Database (Doctrine) 0.09 ms (4)
+Dec 30 07:38:40 symfony [info] {sfTimerManager} View "Success" for "project/edit" 48.71 ms (1)
+Dec 30 07:38:40 symfony [info] {sfTimerManager} Partial "project/_form" 24.29 ms (1)
+Dec 30 07:38:42 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Dec 30 07:38:42 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:42 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Dec 30 07:38:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Dec 30 07:38:42 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Dec 30 07:38:42 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:42 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:42 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:42 symfony [info] {sfWebDebugLogger} Configuration 5.34 ms (9)
+Dec 30 07:38:42 symfony [info] {sfWebDebugLogger} Factories 75.19 ms (1)
+Dec 30 07:38:42 symfony [info] {sfWebDebugLogger} Action "project/index" 97.28 ms (1)
+Dec 30 07:38:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:38:42 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 33.31 ms (1)
+Dec 30 07:38:42 symfony [info] {sfTimerManager} Configuration 5.34 ms (9)
+Dec 30 07:38:42 symfony [info] {sfTimerManager} Factories 75.19 ms (1)
+Dec 30 07:38:42 symfony [info] {sfTimerManager} Action "project/index" 97.28 ms (1)
+Dec 30 07:38:42 symfony [info] {sfTimerManager} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:38:42 symfony [info] {sfTimerManager} View "Success" for "project/index" 33.31 ms (1)
+Dec 30 07:38:45 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Dec 30 07:38:45 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:45 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Dec 30 07:38:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 30 07:38:45 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/showSuccess.php"
+Dec 30 07:38:45 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:45 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:45 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:45 symfony [info] {sfWebDebugLogger} Configuration 2.29 ms (9)
+Dec 30 07:38:45 symfony [info] {sfWebDebugLogger} Factories 73.62 ms (1)
+Dec 30 07:38:45 symfony [info] {sfWebDebugLogger} Action "project/show" 105.19 ms (1)
+Dec 30 07:38:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:38:45 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 32.47 ms (1)
+Dec 30 07:38:45 symfony [info] {sfTimerManager} Configuration 2.29 ms (9)
+Dec 30 07:38:45 symfony [info] {sfTimerManager} Factories 73.62 ms (1)
+Dec 30 07:38:45 symfony [info] {sfTimerManager} Action "project/show" 105.19 ms (1)
+Dec 30 07:38:45 symfony [info] {sfTimerManager} Database (Doctrine) 0.01 ms (2)
+Dec 30 07:38:45 symfony [info] {sfTimerManager} View "Success" for "project/show" 32.47 ms (1)
+Dec 30 07:38:47 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Dec 30 07:38:47 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Dec 30 07:38:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 30 07:38:47 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Dec 30 07:38:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 30 07:38:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.name AS p__name, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 30 07:38:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Dec 30 07:38:48 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Dec 30 07:38:48 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Dec 30 07:38:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Dec 30 07:38:48 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:48 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Dec 30 07:38:48 symfony [info] {sfFilter} render to 
+client
+Dec 30 07:38:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 30 07:38:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 30 07:38:48 symfony [info] {sfWebDebugLogger} Configuration 2.08 ms (9)
+Dec 30 07:38:48 symfony [info] {sfWebDebugLogger} Factories 65.86 ms (1)
+Dec 30 07:38:48 symfony [info] {sfWebDebugLogger} Action "project/edit" 172.04 ms (1)
+Dec 30 07:38:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (4)
+Dec 30 07:38:48 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 51.69 ms (1)
+Dec 30 07:38:48 symfony [info] {sfWebDebugLogger} Partial "project/_form" 27.20 ms (1)
+Dec 30 07:38:48 symfony [info] {sfTimerManager} Configuration 2.08 ms (9)
+Dec 30 07:38:48 symfony [info] {sfTimerManager} Factories 65.86 ms (1)
+Dec 30 07:38:48 symfony [info] {sfTimerManager} Action "project/edit" 172.04 ms (1)
+Dec 30 07:38:48 symfony [info] {sfTimerManager} Database (Doctrine) 0.05 ms (4)
+Dec 30 07:38:48 symfony [info] {sfTimerManager} View "Success" for "project/edit" 51.69 ms (1)
+Dec 30 07:38:48 symfony [info] {sfTimerManager} Partial "project/_form" 27.20 ms (1)

@@ -8,12 +8,14 @@ let &cpo=s:cpo_save
 unlet s:cpo_save
 set autoindent
 set backspace=indent,eol,start
+set expandtab
 set fileencodings=ucs-bom,utf-8,default,latin1
 set helplang=en
 set incsearch
 set laststatus=2
 set ruler
 set runtimepath=~/.vim,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vim/vim72,/usr/share/vim/vimfiles/after,/var/lib/vim/addons/after,~/.vim/after
+set shiftwidth=2
 set smarttab
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set tabstop=2
@@ -29,9 +31,9 @@ badd +1 apps/frontend/modules/project/actions/actions.class.php
 badd +1 apps/frontend/modules/project/templates/indexSuccess.php
 badd +1 lib/model/doctrine/Project.class.php
 badd +1 lib/form/doctrine/ProjectForm.class.php
-badd +0 apps/frontend/modules/project/templates/showSuccess.php
+badd +1 apps/frontend/modules/project/templates/showSuccess.php
 badd +1 config/databases.yml
-badd +0 config/doctrine/schema.yml
+badd +1 config/doctrine/schema.yml
 args apps/frontend/modules/project/actions/actions.class.php apps/frontend/modules/project/templates/indexSuccess.php lib/model/doctrine/Project.class.php lib/form/doctrine/ProjectForm.class.php
 edit apps/frontend/modules/project/actions/actions.class.php
 set splitbelow splitright
@@ -135,7 +137,7 @@ set nowrap
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 10) / 21)
+let s:l = 1 - ((0 * winheight(0) + 11) / 22)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -503,7 +505,7 @@ setlocal dictionary=
 setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
-setlocal noexpandtab
+setlocal expandtab
 if &filetype != 'yaml'
 setlocal filetype=yaml
 endif
@@ -530,9 +532,11 @@ setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
 setlocal noinfercase
 setlocal iskeyword=@,48-57,_,192-255
 setlocal keywordprg=
-setlocal nolinebreak
+set linebreak
+setlocal linebreak
 setlocal nolisp
-setlocal nolist
+set list
+setlocal list
 setlocal makeprg=
 setlocal matchpairs=(:),{:},[:]
 setlocal modeline
@@ -550,7 +554,7 @@ setlocal noreadonly
 setlocal norightleft
 setlocal rightleftcmd=search
 setlocal noscrollbind
-setlocal shiftwidth=8
+setlocal shiftwidth=2
 setlocal noshortname
 setlocal nosmartindent
 setlocal softtabstop=0
@@ -575,12 +579,12 @@ set nowrap
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 43 - ((20 * winheight(0) + 10) / 21)
+let s:l = 18 - ((17 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-43
-normal! 06l
+18
+normal! 0
 lcd ~/dreamfish
 tabnext 5
 if exists('s:wipebuf')
