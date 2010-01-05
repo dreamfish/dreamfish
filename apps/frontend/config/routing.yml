@@ -18,3 +18,10 @@ homepage:
 default2:
   url: /Special:FlowDreamfish/:module/:action/*
   param: { module: project, action: index }
+
+default3:
+  url: /:module/:action/*
+
+default4:
+  url: /:module
+  param: { action: index }  

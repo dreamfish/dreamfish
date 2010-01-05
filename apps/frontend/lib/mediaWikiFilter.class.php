@@ -50,7 +50,16 @@ client');
       $event = $dispatcher->filter(new sfEvent($response, 'response.filter_content'), $response->getContent());
       //echo $event->getReturnValue();
       global $wgOut;
-      $wgOut->addHTML($event->getReturnValue());
+
+      $html = $event->getReturnValue();
+      if (isset($wgOut))
+      {
+        $wgOut->addHTML($html);
+      }
+      else
+      {
+        echo $html;
+      }
       #echo $response->getContent();
       #$response->sendContent();
     }
