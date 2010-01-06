@@ -6,8 +6,8 @@ Project:
       unsigned: false
       primary: true
       autoincrement: true
-    title: { type: string(255), notnull: true }
     name: { type: string(255), notnull: true }
+    request: { type: string(255), notnull: true }
     deadline: { type: date, notnull: true }
     description: { type: string(), notnull: true }
     created_at: { type: timestamp(25), notnull: true }
@@ -19,11 +19,23 @@ Project:
       refClass: ProjectSkill
       local: project_id
       foreign: skill_id
+    Values: 
+      class: Value
+      foreignAlias: ProjectValues
+      refClass: ProjectValue
+      local: project_id
+      foreign: value_id
 
 Skill:
   columns:
     id: { type: integer, primary: true }
     name: { type: string(255) }
+
+Value:
+  columns:
+    id: { type: integer, primary: true }
+    name: { type: string(255) }
+    type: { type: string(255) }
 
 ProjectSkill:
   columns:
@@ -32,5 +44,13 @@ ProjectSkill:
   relations:
     Project: { local: project_id, foreign: id, foreignAlias: ProjectSkills }
     Skill: { local: skill_id, foreign: id, foreignAlias: ProjectSkills }
+
+ProjectValue:
+  columns:
+    project_id: { type: integer, primary: true }
+    value_id: { type: integer, primary: true }
+  relations:
+    Project: { local: project_id, foreign: id, foreignAlias: ProjectValues }
+    Valuel: { local: value_id, foreign: id, foreignAlias: ProjectValues }
 
 

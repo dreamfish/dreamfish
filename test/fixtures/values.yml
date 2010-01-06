@@ -1,0 +1,9 @@
+Value:
+  v1: { id: 1, name: Financial, type: Security }
+  v2: { id: 2, name: Personal, type: Security }
+  v3: { id: 3, name: Learning, type: Achievement }
+  v4: { id: 4, name: Academic, type: Achievement }
+  v5: { id: 5, name: Fitness, type: Achievement }
+  v6: { id: 6, name: Sustainability, type: "Global Care" }
+  v7: { id: 7, name: Food, type: "Global Care" }
+

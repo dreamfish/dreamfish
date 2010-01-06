@@ -68,12 +68,26 @@ class projectActions extends sfActions
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
-    $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
+    $values = $request->getParameter($form->getName());
+    $values["values_list"] = array();
+  
+  if (isset($values["value_security_list"]))
+      $values["values_list"] = array_merge($values["values_list"], $values['value_security_list']);
+    if (isset($values["value_achievement_list"])) 
+      $values["values_list"] = array_merge($values["values_list"], $values['value_achievement_list']);
+
+    unset($values['value_security_list']);
+    unset($values['value_achievement_list']);
+
+		$form->bind($values);
+    echo $form->getErrorSchema();
     if ($form->isValid())
     {
-      $project = $form->save();
+//      $form->setValue('skills_list', array("1", "3"));
+			$project = $form->save();
 
       $this->redirect('project/edit?id='.$project->getId());
     }
+
   }
 }

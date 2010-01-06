@@ -5,10 +5,6 @@
       <td><?php echo $project->getId() ?></td>
     </tr>
     <tr>
-      <th>Title:</th>
-      <td><?php echo $project->getTitle() ?></td>
-    </tr>
-    <tr>
       <th>Name:</th>
       <td><?php echo $project->getName() ?></td>
     </tr>

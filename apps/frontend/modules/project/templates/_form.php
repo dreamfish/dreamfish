@@ -18,7 +18,23 @@
       </tr>
     </tfoot>
     <tbody>
-      <?php echo $form ?>
+
+    <?php echo $form['id']->renderRow() ?>
+    <?php echo $form['_csrf_token'] ?> 
+
+    <?php echo $form['name']->renderRow() ?>
+    <?php echo $form['request']->renderRow() ?>
+    <?php echo $form['deadline']->renderRow() ?>
+    <?php echo $form['description']->renderRow() ?>
+    <?php echo $form['skills_list']->renderRow() ?>
+    <tr>
+      <td colspan="2">
+        Value creation: What value can this project create? What value can you offer a worker? You can select up to two per category
+      </td>
+    </tr>
+<!--    <?php echo $form['values_list']->renderRow() ?> -->
+    <?php echo $form['value_security_list']->renderRow() ?>
+    <?php echo $form['value_achievement_list']->renderRow() ?>
     </tbody>
   </table>
 </form>

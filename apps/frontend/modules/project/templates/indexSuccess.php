@@ -4,7 +4,6 @@
   <thead>
     <tr>
       <th>Id</th>
-      <th>Title</th>
       <th>Name</th>
       <th>Deadline</th>
       <th>Description</th>
@@ -16,7 +15,6 @@
     <?php foreach ($projects as $project): ?>
     <tr>
       <td><a href="<?php echo url_for('project/show?id='.$project->getId()) ?>"><?php echo $project->getId() ?></a></td>
-      <td><?php echo $project->getTitle() ?></td>
       <td><?php echo $project->getName() ?></td>
       <td><?php echo $project->getDeadline() ?></td>
       <td><?php echo $project->getDescription() ?></td>

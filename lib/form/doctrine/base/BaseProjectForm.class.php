@@ -16,24 +16,26 @@ abstract class BaseProjectForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'          => new sfWidgetFormInputHidden(),
-      'title'       => new sfWidgetFormInputText(),
       'name'        => new sfWidgetFormInputText(),
+      'request'     => new sfWidgetFormInputText(),
       'deadline'    => new sfWidgetFormDate(),
       'description' => new sfWidgetFormTextarea(),
       'created_at'  => new sfWidgetFormDateTime(),
       'updated_at'  => new sfWidgetFormDateTime(),
       'skills_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Skill')),
+      'values_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Value')),
     ));
 
     $this->setValidators(array(
       'id'          => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
-      'title'       => new sfValidatorString(array('max_length' => 255)),
       'name'        => new sfValidatorString(array('max_length' => 255)),
+      'request'     => new sfValidatorString(array('max_length' => 255)),
       'deadline'    => new sfValidatorDate(),
       'description' => new sfValidatorString(),
       'created_at'  => new sfValidatorDateTime(),
       'updated_at'  => new sfValidatorDateTime(),
       'skills_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Skill', 'required' => false)),
+      'values_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Value', 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('project[%s]');
@@ -59,11 +61,17 @@ abstract class BaseProjectForm extends BaseFormDoctrine
       $this->setDefault('skills_list', $this->object->Skills->getPrimaryKeys());
     }
 
+    if (isset($this->widgetSchema['values_list']))
+    {
+      $this->setDefault('values_list', $this->object->Values->getPrimaryKeys());
+    }
+
   }
 
   protected function doSave($con = null)
   {
     $this->saveSkillsList($con);
+    $this->saveValuesList($con);
 
     parent::doSave($con);
   }
@@ -103,6 +111,44 @@ abstract class BaseProjectForm extends BaseFormDoctrine
     if (count($link))
     {
       $this->object->link('Skills', array_values($link));
+    }
+  }
+
+  public function saveValuesList($con = null)
+  {
+    if (!$this->isValid())
+    {
+      throw $this->getErrorSchema();
+    }
+
+    if (!isset($this->widgetSchema['values_list']))
+    {
+      // somebody has unset this widget
+      return;
+    }
+
+    if (null === $con)
+    {
+      $con = $this->getConnection();
+    }
+
+    $existing = $this->object->Values->getPrimaryKeys();
+    $values = $this->getValue('values_list');
+    if (!is_array($values))
+    {
+      $values = array();
+    }
+  
+    $unlink = array_diff($existing, $values);
+    if (count($unlink))
+    {
+      $this->object->unlink('Values', array_values($unlink));
+    }
+
+    $link = array_diff($values, $existing);
+    if (count($link))
+    {
+      $this->object->link('Values', array_values($link));
     }
   }
 

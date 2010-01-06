@@ -1,6 +1,4 @@
 <?php
-// Connection Component Binding
-Doctrine_Manager::getInstance()->bindComponent('Value', 'doctrine');
 
 /**
  * BaseValue
@@ -9,29 +7,17 @@ Doctrine_Manager::getInstance()->bindComponent('Value', 'doctrine');
  * 
  * @property integer $id
  * @property string $name
- * @property timestamp $created_at
- * @property timestamp $updated_at
- * @property Doctrine_Collection $ValueEvent
- * @property Doctrine_Collection $ValuePerson
- * @property Doctrine_Collection $ValueProject
- * @property Doctrine_Collection $ValueWorkstory
+ * @property string $type
+ * @property Doctrine_Collection $ProjectValues
  * 
- * @method integer             getId()             Returns the current record's "id" value
- * @method string              getName()           Returns the current record's "name" value
- * @method timestamp           getCreatedAt()      Returns the current record's "created_at" value
- * @method timestamp           getUpdatedAt()      Returns the current record's "updated_at" value
- * @method Doctrine_Collection getValueEvent()     Returns the current record's "ValueEvent" collection
- * @method Doctrine_Collection getValuePerson()    Returns the current record's "ValuePerson" collection
- * @method Doctrine_Collection getValueProject()   Returns the current record's "ValueProject" collection
- * @method Doctrine_Collection getValueWorkstory() Returns the current record's "ValueWorkstory" collection
- * @method Value               setId()             Sets the current record's "id" value
- * @method Value               setName()           Sets the current record's "name" value
- * @method Value               setCreatedAt()      Sets the current record's "created_at" value
- * @method Value               setUpdatedAt()      Sets the current record's "updated_at" value
- * @method Value               setValueEvent()     Sets the current record's "ValueEvent" collection
- * @method Value               setValuePerson()    Sets the current record's "ValuePerson" collection
- * @method Value               setValueProject()   Sets the current record's "ValueProject" collection
- * @method Value               setValueWorkstory() Sets the current record's "ValueWorkstory" collection
+ * @method integer             getId()            Returns the current record's "id" value
+ * @method string              getName()          Returns the current record's "name" value
+ * @method string              getType()          Returns the current record's "type" value
+ * @method Doctrine_Collection getProjectValues() Returns the current record's "ProjectValues" collection
+ * @method Value               setId()            Sets the current record's "id" value
+ * @method Value               setName()          Sets the current record's "name" value
+ * @method Value               setType()          Sets the current record's "type" value
+ * @method Value               setProjectValues() Sets the current record's "ProjectValues" collection
  * 
  * @package    dfmarketplace
  * @subpackage model
@@ -43,60 +29,26 @@ abstract class BaseValue extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('value');
-        $this->hasColumn('id', 'integer', 8, array(
+        $this->hasColumn('id', 'integer', null, array(
              'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => false,
              'primary' => true,
-             'autoincrement' => true,
-             'length' => '8',
              ));
         $this->hasColumn('name', 'string', 255, array(
              'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
              'length' => '255',
              ));
-        $this->hasColumn('created_at', 'timestamp', 25, array(
-             'type' => 'timestamp',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => '25',
-             ));
-        $this->hasColumn('updated_at', 'timestamp', 25, array(
-             'type' => 'timestamp',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => '25',
+        $this->hasColumn('type', 'string', 255, array(
+             'type' => 'string',
+             'length' => '255',
              ));
     }
 
     public function setUp()
     {
         parent::setUp();
-        $this->hasMany('ValueEvent', array(
-             'local' => 'id',
-             'foreign' => 'value_id'));
-
-        $this->hasMany('ValuePerson', array(
-             'local' => 'id',
-             'foreign' => 'value_id'));
-
-        $this->hasMany('ValueProject', array(
-             'local' => 'id',
-             'foreign' => 'value_id'));
-
-        $this->hasMany('ValueWorkstory', array(
-             'local' => 'id',
-             'foreign' => 'value_id'));
+        $this->hasMany('Project as ProjectValues', array(
+             'refClass' => 'ProjectValue',
+             'local' => 'value_id',
+             'foreign' => 'project_id'));
     }
 }

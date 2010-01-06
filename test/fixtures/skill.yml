@@ -1,0 +1,33 @@
+Skill:
+  s1: { id: 1, name: "Arts" }
+  s2: { id: 2, name: "Account Management / Sales" }
+  s3: { id: 3, name: "Business Services" }
+  s4: { id: 4, name: "Coaching and Mentorship" }
+  s5: { id: 5, name: "Community Management " }
+  s6: { id: 6, name: "Education and Training" }
+  s7: { id: 7, name: "Engineering - Industrial" }
+  s8: { id: 8, name: "Engineering - Software" }
+  s9: { id: 9, name: "Environmental" }
+  s10: { id: 10, name: "Design" }
+  s11: { id: 11, name: "Group Facilitation" }
+  s12: { id: 12, name: "Funding" }
+  s13: { id: 13, name: "Fundraising" }
+  s14: { id: 14, name: "Health and Wellness" }
+  s15: { id: 15, name: "Insurance" }
+  s16: { id: 16, name: "ICT - Information Communication Tech" }
+  s17: { id: 17, name: "Marketing" }
+  s18: { id: 18, name: "NGO Management" }
+  s19: { id: 19, name: "Outsourcing " }
+  s20: { id: 20, name: "Project Management" }
+  s21: { id: 21, name: "Strategy / Planning" }
+  s22: { id: 22, name: "Value and Social Impact Analysis" }
+  s23: { id: 23, name: "Virtual Assistance - Data / Contact management" }
+  s24: { id: 24, name: "Virtual Assistance - Research" }
+  s25: { id: 25, name: "Virtual Assistance - Social networking" }
+  s26: { id: 26, name: "Virtual Assistance - Scheduling / ToDo List" }
+  s27: { id: 27, name: "Virtual Assistance - Technical" }
+  s28: { id: 28, name: "Virtual Assistance - Transcription" }
+  s29: { id: 29, name: "Web hosting - Systems Administration" }
+  s30: { id: 30, name: "Writing" }
+  s31: { id: 31, name: "Other" }
+
