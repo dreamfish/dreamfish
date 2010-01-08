@@ -1,9 +1,0 @@
-VenueType:
-    inperson:
-       name: "In Person"
-    phone:
-       name: "Phone"
-    web:
-       name: "Web"
-    chat:
-       name: "Chat"

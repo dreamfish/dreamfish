@@ -1,8 +1,0 @@
-PaymentMethod:
-    card:
-      name: Credit Card
-      PaymentMethodAttributes: [card]
-    pal:
-      name: Paypal
-      PaymentMethodAttributes: [pal]
-

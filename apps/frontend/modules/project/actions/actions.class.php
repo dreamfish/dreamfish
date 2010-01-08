@@ -70,17 +70,16 @@ class projectActions extends sfActions
   {
     $values = $request->getParameter($form->getName());
     $values["values_list"] = array();
-  
-  if (isset($values["value_security_list"]))
-      $values["values_list"] = array_merge($values["values_list"], $values['value_security_list']);
-    if (isset($values["value_achievement_list"])) 
-      $values["values_list"] = array_merge($values["values_list"], $values['value_achievement_list']);
+ 
+ 		$valueList = array("security", "achievement", "learning", "global");
 
-    unset($values['value_security_list']);
-    unset($values['value_achievement_list']);
-
+		foreach($valueList as $valueItem)
+		{
+			if (isset($values["value_".$valueItem."_list"])) 
+				$values["values_list"] = array_merge($values["values_list"], $values["value_".$valueItem."_list"]);
+				unset($values["value_".$valueItem."_list"]);
+		}
 		$form->bind($values);
-    echo $form->getErrorSchema();
     if ($form->isValid())
     {
 //      $form->setValue('skills_list', array("1", "3"));

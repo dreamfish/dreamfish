@@ -138,7 +138,7 @@ abstract class BaseProjectForm extends BaseFormDoctrine
     {
       $values = array();
     }
-  
+
     $unlink = array_diff($existing, $values);
     if (count($unlink))
     {

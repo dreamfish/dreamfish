@@ -38,6 +38,19 @@ class ProjectForm extends BaseProjectForm
        , 'multiple' => true));
 
 
+  $this->widgetSchema['value_learning_list'] = new sfWidgetFormChoice(array(
+       'choices' => $filter(Doctrine::getTable('Value')->findByDql('type = ?', array('Learning'))->toArray())
+       , 'label' => 'Learning'
+       , 'multiple' => true));
+
+
+
+  $this->widgetSchema['value_global_list'] = new sfWidgetFormChoice(array(
+      'choices' => $filter(Doctrine::getTable('Value')->findByDql('type = ?', array('Global'))->toArray())
+      , 'label' => 'Global'
+      , 'multiple' => true));
+
+
 /*    
      $this->widgetSchema['values_list'] = new sfWidgetFormChoice(array(
            'choices' => $filter(Doctrine::getTable('Value')->findAll()->toArray())
@@ -52,7 +65,7 @@ class ProjectForm extends BaseProjectForm
     $values = $this->object->Values->toArray();
     $getId = create_function('$a', 'return $a["id"];');
 
-    $valueTypes = array("Security", "Achievement");
+    $valueTypes = array("Security", "Achievement", "Learning", "Global");
 
     foreach($valueTypes as $valueType)
     {

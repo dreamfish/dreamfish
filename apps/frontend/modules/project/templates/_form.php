@@ -19,7 +19,7 @@
     </tfoot>
     <tbody>
 
-    <?php echo $form['id']->renderRow() ?>
+    <?php echo $form['id'] ?>
     <?php echo $form['_csrf_token'] ?> 
 
     <?php echo $form['name']->renderRow() ?>
@@ -35,6 +35,13 @@
 <!--    <?php echo $form['values_list']->renderRow() ?> -->
     <?php echo $form['value_security_list']->renderRow() ?>
     <?php echo $form['value_achievement_list']->renderRow() ?>
+    <?php echo $form['value_learning_list']->renderRow() ?>
+    <?php echo $form['value_global_list']->renderRow() ?>
+
+
+
+
+
     </tbody>
   </table>
 </form>

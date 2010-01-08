@@ -19,6 +19,7 @@ set shiftwidth=2
 set smarttab
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set tabstop=2
+set window=35
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
@@ -112,7 +113,7 @@ setlocal noreadonly
 setlocal norightleft
 setlocal rightleftcmd=search
 setlocal noscrollbind
-setlocal shiftwidth=8
+setlocal shiftwidth=2
 setlocal noshortname
 setlocal nosmartindent
 setlocal softtabstop=0
@@ -137,12 +138,12 @@ set nowrap
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 11) / 22)
+let s:l = 78 - ((15 * winheight(0) + 16) / 33)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+78
+normal! 03l
 tabedit apps/frontend/modules/project/templates/showSuccess.php
 set splitbelow splitright
 set nosplitbelow
@@ -430,8 +431,7 @@ setlocal matchpairs=(:),{:},[:]
 setlocal modeline
 setlocal modifiable
 setlocal nrformats=octal,hex
-set number
-setlocal number
+setlocal nonumber
 setlocal numberwidth=4
 setlocal omnifunc=
 setlocal path=
@@ -467,12 +467,12 @@ set nowrap
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 2 - ((1 * winheight(0) + 10) / 21)
+let s:l = 68 - ((20 * winheight(0) + 16) / 33)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-2
-normal! 0
+68
+normal! 070l
 lcd ~/dreamfish
 tabedit ~/dreamfish/config/doctrine/schema.yml
 set splitbelow splitright
@@ -579,14 +579,14 @@ set nowrap
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 18 - ((17 * winheight(0) + 10) / 21)
+let s:l = 18 - ((17 * winheight(0) + 16) / 33)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 18
 normal! 0
 lcd ~/dreamfish
-tabnext 5
+tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif

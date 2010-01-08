@@ -1,7 +1,0 @@
-Workshop:
-   create_dreamfish:
-       offer_type_id: [events]
-       avatar_id: [connector]
-       description: "Build dreamfish prototype"
-       welcome_status_id: [contact_me] 
-       contact_id: [fabio]

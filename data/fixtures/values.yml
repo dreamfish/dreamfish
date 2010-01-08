@@ -1,0 +1,26 @@
+Value:
+   v1: { id: 1, name: 'Relationships and community', type: Security }
+   v2: { id: 2, name: 'Income', type: Security }
+   v3: { id: 3, name: 'Food, water, housing', type: Security }
+   v4: { id: 4, name: 'Physical safety', type: Security }
+   v5: { id: 5, name: 'Health and wellness', type: Security }
+   v6: { id: 6, name: 'Equity and ownership', type: Security }
+   v7: { id: 7, name: 'Alternative currency', type: Security }
+   v8: { id: 8, name: 'Quality', type: Achievement }
+   v9: { id: 9, name: 'Productivity', type: Achievement }
+   v10: { id: 10, name: 'Self-confidence', type: Achievement }
+   v11: { id: 11, name: 'Cost reduction', type: Achievement }
+   v12: { id: 12, name: 'Professional experience', type: Achievement }
+   v13: { id: 13, name: 'Learning', type: Learning }
+   v14: { id: 14, name: 'Meaning and purpose', type: Learning }
+   v15: { id: 15, name: 'Ethical action', type: Learning }
+   v16: { id: 16, name: 'Innovation', type: Learning }
+   v17: { id: 17, name: 'Collaboration', type: Learning }
+   v18: { id: 18, name: 'Empowerment', type: Learning }
+   v19: { id: 19, name: 'Environment', type: Global }
+   v20: { id: 20, name: 'Diversity', type: Global }
+   v21: { id: 21, name: 'Human Rights', type: Global }
+   v22: { id: 22, name: 'Interdependence', type: Global }
+   v23: { id: 23, name: 'Wisdom', type: Global }
+   v24: { id: 24, name: 'Peace and Happiness', type: Global }
+
