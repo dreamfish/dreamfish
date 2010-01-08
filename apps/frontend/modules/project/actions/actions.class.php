@@ -82,10 +82,11 @@ class projectActions extends sfActions
 		$form->bind($values);
     if ($form->isValid())
     {
-//      $form->setValue('skills_list', array("1", "3"));
 			$project = $form->save();
-
-      $this->redirect('project/edit?id='.$project->getId());
+			$this->getUser()->setFlash('success', 'Project Saved!');
+			$this->redirect('project/index');
+      //$this->redirect('project/edit?id='.$project->getId());
+			
     }
 
   }

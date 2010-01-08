@@ -77,6 +77,6 @@ jQuery(document).ready(function() {
     {
       return;
     }
-    $('<a/>').attr('id', 'datepick_' + this.id.slice(0, -4)).attr('href', '#').append($('<img/>').attr('src', '/symfony/dreamfish/images/calendar.png')).insertAfter(this).addDatePicker(this.id.slice(0, -4), $(this).children(':eq(1)').val(), $(this).children(':last').val());
+    $('<a/>').attr('id', 'datepick_' + this.id.slice(0, -4)).attr('href', '#').append($('<img/>').attr('src', '/symfony/dreamfish/web/images/calendar.png')).insertAfter(this).addDatePicker(this.id.slice(0, -4), $(this).children(':eq(1)').val(), $(this).children(':last').val());
   });
 });
