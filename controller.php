@@ -2,6 +2,7 @@
 
 require_once(dirname(__FILE__).'/config/ProjectConfiguration.class.php');
 
+
 function output($text)
 {
     global $wgOut;
@@ -13,8 +14,15 @@ function run()
 #  output("foo2");
 
  $configuration = ProjectConfiguration::getApplicationConfiguration('frontend', 'dev', true);
-sfContext::createInstance($configuration)->dispatch();
+//sfConfig::set('sf_web_js_dir_name', '/sjs');
+//sfConfig::set('sf_web_css_dir_name', '/scss');
+$context = sfContext::createInstance($configuration);
+$context->getRequest()->setRelativeUrlRoot("");
 
+$context->dispatch();
+
+  sfConfig::set('sf_web_js_dir_name', '/sjs');
+  sfConfig::set('sf_web_css_dir_name', '/scss');
 }
 
 

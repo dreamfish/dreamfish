@@ -17984,3 +17984,1509 @@ Jan 07 16:39:01 symfony [info] {sfTimerManager} Action "project/edit" 140.93 ms 
 Jan 07 16:39:01 symfony [info] {sfTimerManager} Database (Doctrine) 0.11 ms (10)
 Jan 07 16:39:01 symfony [info] {sfTimerManager} View "Success" for "project/edit" 61.07 ms (1)
 Jan 07 16:39:01 symfony [info] {sfTimerManager} Partial "project/_form" 43.22 ms (1)
+Jan 08 04:06:19 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/index with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 08 04:06:19 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:06:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:06:19 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 08 04:06:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:06:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Jan 08 04:06:19 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 08 04:06:19 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:06:19 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:06:19 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:06:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:06:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:06:19 symfony [info] {sfWebDebugLogger} Configuration 3.66 ms (9)
+Jan 08 04:06:19 symfony [info] {sfWebDebugLogger} Factories 32.25 ms (1)
+Jan 08 04:06:19 symfony [info] {sfWebDebugLogger} Action "project/index" 49.73 ms (1)
+Jan 08 04:06:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (2)
+Jan 08 04:06:19 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 18.27 ms (1)
+Jan 08 04:06:19 symfony [info] {sfTimerManager} Configuration 3.66 ms (9)
+Jan 08 04:06:19 symfony [info] {sfTimerManager} Factories 32.25 ms (1)
+Jan 08 04:06:19 symfony [info] {sfTimerManager} Action "project/index" 49.73 ms (1)
+Jan 08 04:06:19 symfony [info] {sfTimerManager} Database (Doctrine) 0.05 ms (2)
+Jan 08 04:06:19 symfony [info] {sfTimerManager} View "Success" for "project/index" 18.27 ms (1)
+Jan 08 04:06:22 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Jan 08 04:06:22 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:06:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:06:22 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Jan 08 04:06:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:06:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:06:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:06:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:06:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:06:22 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Jan 08 04:06:22 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:06:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:06:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:06:22 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:06:22 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:06:22 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:06:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:06:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:06:22 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (9)
+Jan 08 04:06:22 symfony [info] {sfWebDebugLogger} Factories 29.95 ms (1)
+Jan 08 04:06:22 symfony [info] {sfWebDebugLogger} Action "project/new" 104.70 ms (1)
+Jan 08 04:06:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (7)
+Jan 08 04:06:22 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 52.97 ms (1)
+Jan 08 04:06:22 symfony [info] {sfWebDebugLogger} Partial "project/_form" 35.61 ms (1)
+Jan 08 04:06:22 symfony [info] {sfTimerManager} Configuration 1.47 ms (9)
+Jan 08 04:06:22 symfony [info] {sfTimerManager} Factories 29.95 ms (1)
+Jan 08 04:06:22 symfony [info] {sfTimerManager} Action "project/new" 104.70 ms (1)
+Jan 08 04:06:22 symfony [info] {sfTimerManager} Database (Doctrine) 0.06 ms (7)
+Jan 08 04:06:22 symfony [info] {sfTimerManager} View "Success" for "project/new" 52.97 ms (1)
+Jan 08 04:06:22 symfony [info] {sfTimerManager} Partial "project/_form" 35.61 ms (1)
+Jan 08 04:07:14 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 08 04:07:14 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:07:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:07:14 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 08 04:07:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:07:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:07:14 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 08 04:07:14 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:07:14 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:07:14 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:07:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:07:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:07:14 symfony [info] {sfWebDebugLogger} Configuration 1.81 ms (9)
+Jan 08 04:07:14 symfony [info] {sfWebDebugLogger} Factories 30.54 ms (1)
+Jan 08 04:07:14 symfony [info] {sfWebDebugLogger} Action "project/show" 60.74 ms (1)
+Jan 08 04:07:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jan 08 04:07:14 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 23.58 ms (1)
+Jan 08 04:07:14 symfony [info] {sfTimerManager} Configuration 1.81 ms (9)
+Jan 08 04:07:14 symfony [info] {sfTimerManager} Factories 30.54 ms (1)
+Jan 08 04:07:14 symfony [info] {sfTimerManager} Action "project/show" 60.74 ms (1)
+Jan 08 04:07:14 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Jan 08 04:07:14 symfony [info] {sfTimerManager} View "Success" for "project/show" 23.58 ms (1)
+Jan 08 04:07:15 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:07:15 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:07:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:07:15 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:07:16 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:07:16 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:07:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:07:16 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:07:16 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:07:16 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:07:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:07:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:07:16 symfony [info] {sfWebDebugLogger} Configuration 1.96 ms (9)
+Jan 08 04:07:16 symfony [info] {sfWebDebugLogger} Factories 50.34 ms (1)
+Jan 08 04:07:16 symfony [info] {sfWebDebugLogger} Action "project/edit" 146.80 ms (1)
+Jan 08 04:07:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (10)
+Jan 08 04:07:16 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 65.59 ms (1)
+Jan 08 04:07:16 symfony [info] {sfWebDebugLogger} Partial "project/_form" 45.43 ms (1)
+Jan 08 04:07:16 symfony [info] {sfTimerManager} Configuration 1.96 ms (9)
+Jan 08 04:07:16 symfony [info] {sfTimerManager} Factories 50.34 ms (1)
+Jan 08 04:07:16 symfony [info] {sfTimerManager} Action "project/edit" 146.80 ms (1)
+Jan 08 04:07:16 symfony [info] {sfTimerManager} Database (Doctrine) 0.10 ms (10)
+Jan 08 04:07:16 symfony [info] {sfTimerManager} View "Success" for "project/edit" 65.59 ms (1)
+Jan 08 04:07:16 symfony [info] {sfTimerManager} Partial "project/_form" 45.43 ms (1)
+Jan 08 04:10:30 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:10:30 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:10:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:10:30 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:10:30 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:10:30 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:10:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:10:30 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:10:30 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:10:30 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:10:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:10:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:10:30 symfony [info] {sfWebDebugLogger} Configuration 1.72 ms (9)
+Jan 08 04:10:30 symfony [info] {sfWebDebugLogger} Factories 38.65 ms (1)
+Jan 08 04:10:30 symfony [info] {sfWebDebugLogger} Action "project/edit" 166.83 ms (1)
+Jan 08 04:10:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.11 ms (10)
+Jan 08 04:10:30 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 58.61 ms (1)
+Jan 08 04:10:30 symfony [info] {sfWebDebugLogger} Partial "project/_form" 41.29 ms (1)
+Jan 08 04:10:30 symfony [info] {sfTimerManager} Configuration 1.72 ms (9)
+Jan 08 04:10:30 symfony [info] {sfTimerManager} Factories 38.65 ms (1)
+Jan 08 04:10:30 symfony [info] {sfTimerManager} Action "project/edit" 166.83 ms (1)
+Jan 08 04:10:30 symfony [info] {sfTimerManager} Database (Doctrine) 0.11 ms (10)
+Jan 08 04:10:30 symfony [info] {sfTimerManager} View "Success" for "project/edit" 58.61 ms (1)
+Jan 08 04:10:30 symfony [info] {sfTimerManager} Partial "project/_form" 41.29 ms (1)
+Jan 08 04:10:50 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:10:50 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:10:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:10:50 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:10:50 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:10:50 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:10:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:10:50 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:10:50 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:10:50 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:10:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:10:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:10:50 symfony [info] {sfWebDebugLogger} Configuration 2.71 ms (9)
+Jan 08 04:10:50 symfony [info] {sfWebDebugLogger} Factories 48.28 ms (1)
+Jan 08 04:10:50 symfony [info] {sfWebDebugLogger} Action "project/edit" 183.33 ms (1)
+Jan 08 04:10:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.37 ms (10)
+Jan 08 04:10:50 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 66.55 ms (1)
+Jan 08 04:10:50 symfony [info] {sfWebDebugLogger} Partial "project/_form" 47.30 ms (1)
+Jan 08 04:10:50 symfony [info] {sfTimerManager} Configuration 2.71 ms (9)
+Jan 08 04:10:50 symfony [info] {sfTimerManager} Factories 48.28 ms (1)
+Jan 08 04:10:50 symfony [info] {sfTimerManager} Action "project/edit" 183.33 ms (1)
+Jan 08 04:10:50 symfony [info] {sfTimerManager} Database (Doctrine) 0.37 ms (10)
+Jan 08 04:10:50 symfony [info] {sfTimerManager} View "Success" for "project/edit" 66.55 ms (1)
+Jan 08 04:10:50 symfony [info] {sfTimerManager} Partial "project/_form" 47.30 ms (1)
+Jan 08 04:24:18 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:24:18 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:24:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:24:18 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:24:18 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:24:18 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:24:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:24:18 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:24:18 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:24:18 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:24:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:24:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:24:18 symfony [info] {sfWebDebugLogger} Configuration 49.31 ms (10)
+Jan 08 04:24:18 symfony [info] {sfWebDebugLogger} Factories 32.80 ms (1)
+Jan 08 04:24:18 symfony [info] {sfWebDebugLogger} Action "project/edit" 140.73 ms (1)
+Jan 08 04:24:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (10)
+Jan 08 04:24:18 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 106.47 ms (1)
+Jan 08 04:24:18 symfony [info] {sfWebDebugLogger} Partial "project/_form" 40.43 ms (1)
+Jan 08 04:24:18 symfony [info] {sfTimerManager} Configuration 49.31 ms (10)
+Jan 08 04:24:18 symfony [info] {sfTimerManager} Factories 32.80 ms (1)
+Jan 08 04:24:18 symfony [info] {sfTimerManager} Action "project/edit" 140.73 ms (1)
+Jan 08 04:24:18 symfony [info] {sfTimerManager} Database (Doctrine) 0.08 ms (10)
+Jan 08 04:24:18 symfony [info] {sfTimerManager} View "Success" for "project/edit" 106.47 ms (1)
+Jan 08 04:24:18 symfony [info] {sfTimerManager} Partial "project/_form" 40.43 ms (1)
+Jan 08 04:33:47 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:33:47 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:33:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:33:47 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:33:47 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:33:47 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:33:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:33:47 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:33:47 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:33:47 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:33:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:33:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:33:47 symfony [info] {sfWebDebugLogger} Configuration 1.96 ms (9)
+Jan 08 04:33:47 symfony [info] {sfWebDebugLogger} Factories 35.28 ms (1)
+Jan 08 04:33:47 symfony [info] {sfWebDebugLogger} Action "project/edit" 142.10 ms (1)
+Jan 08 04:33:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.09 ms (10)
+Jan 08 04:33:47 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 61.79 ms (1)
+Jan 08 04:33:47 symfony [info] {sfWebDebugLogger} Partial "project/_form" 41.15 ms (1)
+Jan 08 04:33:47 symfony [info] {sfTimerManager} Configuration 1.96 ms (9)
+Jan 08 04:33:47 symfony [info] {sfTimerManager} Factories 35.28 ms (1)
+Jan 08 04:33:47 symfony [info] {sfTimerManager} Action "project/edit" 142.10 ms (1)
+Jan 08 04:33:47 symfony [info] {sfTimerManager} Database (Doctrine) 0.09 ms (10)
+Jan 08 04:33:47 symfony [info] {sfTimerManager} View "Success" for "project/edit" 61.79 ms (1)
+Jan 08 04:33:47 symfony [info] {sfTimerManager} Partial "project/_form" 41.15 ms (1)
+Jan 08 04:34:08 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:34:08 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:34:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:34:08 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:34:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:34:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:34:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:34:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:34:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:34:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:34:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:34:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:34:09 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:34:09 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:34:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:34:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:34:09 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:34:09 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:34:09 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:34:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:34:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:34:09 symfony [info] {sfWebDebugLogger} Configuration 1.97 ms (9)
+Jan 08 04:34:09 symfony [info] {sfWebDebugLogger} Factories 66.02 ms (1)
+Jan 08 04:34:09 symfony [info] {sfWebDebugLogger} Action "project/edit" 221.99 ms (1)
+Jan 08 04:34:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (10)
+Jan 08 04:34:09 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 69.60 ms (1)
+Jan 08 04:34:09 symfony [info] {sfWebDebugLogger} Partial "project/_form" 44.96 ms (1)
+Jan 08 04:34:09 symfony [info] {sfTimerManager} Configuration 1.97 ms (9)
+Jan 08 04:34:09 symfony [info] {sfTimerManager} Factories 66.02 ms (1)
+Jan 08 04:34:09 symfony [info] {sfTimerManager} Action "project/edit" 221.99 ms (1)
+Jan 08 04:34:09 symfony [info] {sfTimerManager} Database (Doctrine) 0.10 ms (10)
+Jan 08 04:34:09 symfony [info] {sfTimerManager} View "Success" for "project/edit" 69.60 ms (1)
+Jan 08 04:34:09 symfony [info] {sfTimerManager} Partial "project/_form" 44.96 ms (1)
+Jan 08 04:58:29 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:58:29 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:58:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:58:29 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:58:29 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:58:29 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:58:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:58:29 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:58:29 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:58:29 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:58:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:58:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:58:29 symfony [info] {sfWebDebugLogger} Configuration 30.89 ms (10)
+Jan 08 04:58:29 symfony [info] {sfWebDebugLogger} Factories 76.56 ms (1)
+Jan 08 04:58:29 symfony [info] {sfWebDebugLogger} Action "project/edit" 274.91 ms (1)
+Jan 08 04:58:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (10)
+Jan 08 04:58:29 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 79.04 ms (1)
+Jan 08 04:58:29 symfony [info] {sfWebDebugLogger} Partial "project/_form" 50.92 ms (1)
+Jan 08 04:58:29 symfony [info] {sfTimerManager} Configuration 30.89 ms (10)
+Jan 08 04:58:29 symfony [info] {sfTimerManager} Factories 76.56 ms (1)
+Jan 08 04:58:29 symfony [info] {sfTimerManager} Action "project/edit" 274.91 ms (1)
+Jan 08 04:58:29 symfony [info] {sfTimerManager} Database (Doctrine) 0.08 ms (10)
+Jan 08 04:58:29 symfony [info] {sfTimerManager} View "Success" for "project/edit" 79.04 ms (1)
+Jan 08 04:58:29 symfony [info] {sfTimerManager} Partial "project/_form" 50.92 ms (1)
+Jan 08 04:58:46 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:58:46 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:58:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:58:46 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:58:46 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:58:46 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:58:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:58:46 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:58:46 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:58:52 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:58:52 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:58:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:58:52 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:58:52 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:58:52 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:58:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:58:52 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:58:52 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:58:52 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:58:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:58:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:58:52 symfony [info] {sfWebDebugLogger} Configuration 2.48 ms (9)
+Jan 08 04:58:52 symfony [info] {sfWebDebugLogger} Factories 58.17 ms (1)
+Jan 08 04:58:52 symfony [info] {sfWebDebugLogger} Action "project/edit" 197.67 ms (1)
+Jan 08 04:58:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.12 ms (10)
+Jan 08 04:58:52 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 74.38 ms (1)
+Jan 08 04:58:52 symfony [info] {sfWebDebugLogger} Partial "project/_form" 47.95 ms (1)
+Jan 08 04:58:52 symfony [info] {sfTimerManager} Configuration 2.48 ms (9)
+Jan 08 04:58:52 symfony [info] {sfTimerManager} Factories 58.17 ms (1)
+Jan 08 04:58:52 symfony [info] {sfTimerManager} Action "project/edit" 197.67 ms (1)
+Jan 08 04:58:52 symfony [info] {sfTimerManager} Database (Doctrine) 0.12 ms (10)
+Jan 08 04:58:52 symfony [info] {sfTimerManager} View "Success" for "project/edit" 74.38 ms (1)
+Jan 08 04:58:52 symfony [info] {sfTimerManager} Partial "project/_form" 47.95 ms (1)
+Jan 08 04:59:46 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 04:59:46 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 04:59:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 04:59:46 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 04:59:46 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 04:59:46 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 04:59:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 04:59:46 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:59:46 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 04:59:46 symfony [info] {sfFilter} render to 
+client
+Jan 08 04:59:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 04:59:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 04:59:46 symfony [info] {sfWebDebugLogger} Configuration 24.57 ms (10)
+Jan 08 04:59:46 symfony [info] {sfWebDebugLogger} Factories 58.97 ms (1)
+Jan 08 04:59:46 symfony [info] {sfWebDebugLogger} Action "project/edit" 194.66 ms (1)
+Jan 08 04:59:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.11 ms (10)
+Jan 08 04:59:46 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 73.10 ms (1)
+Jan 08 04:59:46 symfony [info] {sfWebDebugLogger} Partial "project/_form" 46.79 ms (1)
+Jan 08 04:59:46 symfony [info] {sfTimerManager} Configuration 24.57 ms (10)
+Jan 08 04:59:46 symfony [info] {sfTimerManager} Factories 58.97 ms (1)
+Jan 08 04:59:46 symfony [info] {sfTimerManager} Action "project/edit" 194.66 ms (1)
+Jan 08 04:59:46 symfony [info] {sfTimerManager} Database (Doctrine) 0.11 ms (10)
+Jan 08 04:59:46 symfony [info] {sfTimerManager} View "Success" for "project/edit" 73.10 ms (1)
+Jan 08 04:59:46 symfony [info] {sfTimerManager} Partial "project/_form" 46.79 ms (1)
+Jan 08 05:03:14 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 05:03:14 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:03:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:03:14 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 05:03:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:03:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 05:03:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:03:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:03:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:03:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:03:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:03:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:03:15 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 05:03:15 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:03:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:03:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:03:15 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:03:15 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:03:15 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:03:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:03:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:03:15 symfony [info] {sfWebDebugLogger} Configuration 26.81 ms (10)
+Jan 08 05:03:15 symfony [info] {sfWebDebugLogger} Factories 76.03 ms (1)
+Jan 08 05:03:15 symfony [info] {sfWebDebugLogger} Action "project/edit" 250.41 ms (1)
+Jan 08 05:03:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (10)
+Jan 08 05:03:15 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 82.89 ms (1)
+Jan 08 05:03:15 symfony [info] {sfWebDebugLogger} Partial "project/_form" 56.59 ms (1)
+Jan 08 05:03:15 symfony [info] {sfTimerManager} Configuration 26.81 ms (10)
+Jan 08 05:03:15 symfony [info] {sfTimerManager} Factories 76.03 ms (1)
+Jan 08 05:03:15 symfony [info] {sfTimerManager} Action "project/edit" 250.41 ms (1)
+Jan 08 05:03:15 symfony [info] {sfTimerManager} Database (Doctrine) 0.10 ms (10)
+Jan 08 05:03:15 symfony [info] {sfTimerManager} View "Success" for "project/edit" 82.89 ms (1)
+Jan 08 05:03:15 symfony [info] {sfTimerManager} Partial "project/_form" 56.59 ms (1)
+Jan 08 05:03:50 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 05:03:50 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:03:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:03:50 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:03:51 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 05:03:51 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:03:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:03:51 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:03:51 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:03:51 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:03:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:03:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:03:51 symfony [info] {sfWebDebugLogger} Configuration 30.03 ms (10)
+Jan 08 05:03:51 symfony [info] {sfWebDebugLogger} Factories 74.66 ms (1)
+Jan 08 05:03:51 symfony [info] {sfWebDebugLogger} Action "project/edit" 249.91 ms (1)
+Jan 08 05:03:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.11 ms (10)
+Jan 08 05:03:51 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 80.40 ms (1)
+Jan 08 05:03:51 symfony [info] {sfWebDebugLogger} Partial "project/_form" 53.15 ms (1)
+Jan 08 05:03:51 symfony [info] {sfTimerManager} Configuration 30.03 ms (10)
+Jan 08 05:03:51 symfony [info] {sfTimerManager} Factories 74.66 ms (1)
+Jan 08 05:03:51 symfony [info] {sfTimerManager} Action "project/edit" 249.91 ms (1)
+Jan 08 05:03:51 symfony [info] {sfTimerManager} Database (Doctrine) 0.11 ms (10)
+Jan 08 05:03:51 symfony [info] {sfTimerManager} View "Success" for "project/edit" 80.40 ms (1)
+Jan 08 05:03:51 symfony [info] {sfTimerManager} Partial "project/_form" 53.15 ms (1)
+Jan 08 05:04:55 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 05:04:55 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:04:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:04:55 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:04:55 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 05:04:55 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:04:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:04:55 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:04:55 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:04:55 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:04:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:04:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:04:55 symfony [info] {sfWebDebugLogger} Configuration 27.74 ms (10)
+Jan 08 05:04:55 symfony [info] {sfWebDebugLogger} Factories 75.89 ms (1)
+Jan 08 05:04:55 symfony [info] {sfWebDebugLogger} Action "project/edit" 256.97 ms (1)
+Jan 08 05:04:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (10)
+Jan 08 05:04:55 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 82.72 ms (1)
+Jan 08 05:04:55 symfony [info] {sfWebDebugLogger} Partial "project/_form" 55.34 ms (1)
+Jan 08 05:04:55 symfony [info] {sfTimerManager} Configuration 27.74 ms (10)
+Jan 08 05:04:55 symfony [info] {sfTimerManager} Factories 75.89 ms (1)
+Jan 08 05:04:55 symfony [info] {sfTimerManager} Action "project/edit" 256.97 ms (1)
+Jan 08 05:04:55 symfony [info] {sfTimerManager} Database (Doctrine) 0.08 ms (10)
+Jan 08 05:04:55 symfony [info] {sfTimerManager} View "Success" for "project/edit" 82.72 ms (1)
+Jan 08 05:04:55 symfony [info] {sfTimerManager} Partial "project/_form" 55.34 ms (1)
+Jan 08 05:05:56 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 05:05:57 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:05:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:05:57 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:05:57 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 05:05:57 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:05:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:05:57 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:05:57 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:05:57 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:05:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:05:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:05:57 symfony [info] {sfWebDebugLogger} Configuration 5.22 ms (9)
+Jan 08 05:05:57 symfony [info] {sfWebDebugLogger} Factories 79.49 ms (1)
+Jan 08 05:05:57 symfony [info] {sfWebDebugLogger} Action "project/edit" 271.30 ms (1)
+Jan 08 05:05:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.12 ms (10)
+Jan 08 05:05:57 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 85.43 ms (1)
+Jan 08 05:05:57 symfony [info] {sfWebDebugLogger} Partial "project/_form" 54.31 ms (1)
+Jan 08 05:05:57 symfony [info] {sfTimerManager} Configuration 5.22 ms (9)
+Jan 08 05:05:57 symfony [info] {sfTimerManager} Factories 79.49 ms (1)
+Jan 08 05:05:57 symfony [info] {sfTimerManager} Action "project/edit" 271.30 ms (1)
+Jan 08 05:05:57 symfony [info] {sfTimerManager} Database (Doctrine) 0.12 ms (10)
+Jan 08 05:05:57 symfony [info] {sfTimerManager} View "Success" for "project/edit" 85.43 ms (1)
+Jan 08 05:05:57 symfony [info] {sfTimerManager} Partial "project/_form" 54.31 ms (1)
+Jan 08 05:06:35 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 05:06:35 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:06:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:06:35 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:06:35 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 05:06:35 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:06:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:06:35 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:06:35 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:06:35 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:06:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:06:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:06:35 symfony [info] {sfWebDebugLogger} Configuration 2.20 ms (9)
+Jan 08 05:06:35 symfony [info] {sfWebDebugLogger} Factories 66.09 ms (1)
+Jan 08 05:06:35 symfony [info] {sfWebDebugLogger} Action "project/edit" 199.99 ms (1)
+Jan 08 05:06:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (10)
+Jan 08 05:06:35 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 69.75 ms (1)
+Jan 08 05:06:35 symfony [info] {sfWebDebugLogger} Partial "project/_form" 46.64 ms (1)
+Jan 08 05:06:35 symfony [info] {sfTimerManager} Configuration 2.20 ms (9)
+Jan 08 05:06:35 symfony [info] {sfTimerManager} Factories 66.09 ms (1)
+Jan 08 05:06:35 symfony [info] {sfTimerManager} Action "project/edit" 199.99 ms (1)
+Jan 08 05:06:35 symfony [info] {sfTimerManager} Database (Doctrine) 0.41 ms (10)
+Jan 08 05:06:35 symfony [info] {sfTimerManager} View "Success" for "project/edit" 69.75 ms (1)
+Jan 08 05:06:35 symfony [info] {sfTimerManager} Partial "project/_form" 46.64 ms (1)
+Jan 08 05:06:53 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 05:06:53 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:06:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:06:53 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 05:06:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:06:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 05:06:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:06:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:06:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:06:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:06:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:06:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:06:54 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 05:06:54 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:06:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:06:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:06:54 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:06:54 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:06:54 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:06:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:06:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:06:54 symfony [info] {sfWebDebugLogger} Configuration 2.60 ms (9)
+Jan 08 05:06:54 symfony [info] {sfWebDebugLogger} Factories 60.81 ms (1)
+Jan 08 05:06:54 symfony [info] {sfWebDebugLogger} Action "project/edit" 198.72 ms (1)
+Jan 08 05:06:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.09 ms (10)
+Jan 08 05:06:54 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 65.69 ms (1)
+Jan 08 05:06:54 symfony [info] {sfWebDebugLogger} Partial "project/_form" 42.38 ms (1)
+Jan 08 05:06:54 symfony [info] {sfTimerManager} Configuration 2.60 ms (9)
+Jan 08 05:06:54 symfony [info] {sfTimerManager} Factories 60.81 ms (1)
+Jan 08 05:06:54 symfony [info] {sfTimerManager} Action "project/edit" 198.72 ms (1)
+Jan 08 05:06:54 symfony [info] {sfTimerManager} Database (Doctrine) 0.09 ms (10)
+Jan 08 05:06:54 symfony [info] {sfTimerManager} View "Success" for "project/edit" 65.69 ms (1)
+Jan 08 05:06:54 symfony [info] {sfTimerManager} Partial "project/_form" 42.38 ms (1)
+Jan 08 05:07:34 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 05:07:34 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:07:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:07:34 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:07:35 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 05:07:35 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:07:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:07:35 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:07:35 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:07:35 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:07:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:07:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:07:35 symfony [info] {sfWebDebugLogger} Configuration 2.31 ms (9)
+Jan 08 05:07:35 symfony [info] {sfWebDebugLogger} Factories 78.21 ms (1)
+Jan 08 05:07:35 symfony [info] {sfWebDebugLogger} Action "project/edit" 270.77 ms (1)
+Jan 08 05:07:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.18 ms (10)
+Jan 08 05:07:35 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 83.41 ms (1)
+Jan 08 05:07:35 symfony [info] {sfWebDebugLogger} Partial "project/_form" 54.44 ms (1)
+Jan 08 05:07:35 symfony [info] {sfTimerManager} Configuration 2.31 ms (9)
+Jan 08 05:07:35 symfony [info] {sfTimerManager} Factories 78.21 ms (1)
+Jan 08 05:07:35 symfony [info] {sfTimerManager} Action "project/edit" 270.77 ms (1)
+Jan 08 05:07:35 symfony [info] {sfTimerManager} Database (Doctrine) 0.18 ms (10)
+Jan 08 05:07:35 symfony [info] {sfTimerManager} View "Success" for "project/edit" 83.41 ms (1)
+Jan 08 05:07:35 symfony [info] {sfTimerManager} Partial "project/_form" 54.44 ms (1)
+Jan 08 05:08:03 symfony [info] {sfPatternRouting} Match route "default4" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 08 05:08:03 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:08:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:08:03 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 08 05:08:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:08:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p - ()
+Jan 08 05:08:03 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 08 05:08:03 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:03 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:03 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:08:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:08:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:08:03 symfony [info] {sfWebDebugLogger} Configuration 2.70 ms (9)
+Jan 08 05:08:03 symfony [info] {sfWebDebugLogger} Factories 31.65 ms (1)
+Jan 08 05:08:03 symfony [info] {sfWebDebugLogger} Action "project/index" 54.07 ms (1)
+Jan 08 05:08:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jan 08 05:08:03 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 21.20 ms (1)
+Jan 08 05:08:03 symfony [info] {sfTimerManager} Configuration 2.70 ms (9)
+Jan 08 05:08:03 symfony [info] {sfTimerManager} Factories 31.65 ms (1)
+Jan 08 05:08:03 symfony [info] {sfTimerManager} Action "project/index" 54.07 ms (1)
+Jan 08 05:08:03 symfony [info] {sfTimerManager} Database (Doctrine) 0.02 ms (2)
+Jan 08 05:08:03 symfony [info] {sfTimerManager} View "Success" for "project/index" 21.20 ms (1)
+Jan 08 05:08:04 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Jan 08 05:08:04 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:08:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:08:04 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Jan 08 05:08:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:08:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:08:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:08:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:08:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:08:04 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Jan 08 05:08:04 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:08:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:08:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:08:04 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:04 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:04 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:08:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:08:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:08:04 symfony [info] {sfWebDebugLogger} Configuration 2.25 ms (9)
+Jan 08 05:08:04 symfony [info] {sfWebDebugLogger} Factories 39.46 ms (1)
+Jan 08 05:08:04 symfony [info] {sfWebDebugLogger} Action "project/new" 117.74 ms (1)
+Jan 08 05:08:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.44 ms (7)
+Jan 08 05:08:04 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 52.98 ms (1)
+Jan 08 05:08:04 symfony [info] {sfWebDebugLogger} Partial "project/_form" 36.91 ms (1)
+Jan 08 05:08:04 symfony [info] {sfTimerManager} Configuration 2.25 ms (9)
+Jan 08 05:08:04 symfony [info] {sfTimerManager} Factories 39.46 ms (1)
+Jan 08 05:08:04 symfony [info] {sfTimerManager} Action "project/new" 117.74 ms (1)
+Jan 08 05:08:04 symfony [info] {sfTimerManager} Database (Doctrine) 0.44 ms (7)
+Jan 08 05:08:04 symfony [info] {sfTimerManager} View "Success" for "project/new" 52.98 ms (1)
+Jan 08 05:08:04 symfony [info] {sfTimerManager} Partial "project/_form" 36.91 ms (1)
+Jan 08 05:08:06 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Jan 08 05:08:06 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:08:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:08:06 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Jan 08 05:08:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:08:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:08:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:08:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:08:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:08:06 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Jan 08 05:08:06 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:08:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:08:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:08:06 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:06 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:06 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:08:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:08:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:08:06 symfony [info] {sfWebDebugLogger} Configuration 1.99 ms (9)
+Jan 08 05:08:06 symfony [info] {sfWebDebugLogger} Factories 36.68 ms (1)
+Jan 08 05:08:06 symfony [info] {sfWebDebugLogger} Action "project/new" 132.14 ms (1)
+Jan 08 05:08:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (7)
+Jan 08 05:08:06 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 64.36 ms (1)
+Jan 08 05:08:06 symfony [info] {sfWebDebugLogger} Partial "project/_form" 44.79 ms (1)
+Jan 08 05:08:06 symfony [info] {sfTimerManager} Configuration 1.99 ms (9)
+Jan 08 05:08:06 symfony [info] {sfTimerManager} Factories 36.68 ms (1)
+Jan 08 05:08:06 symfony [info] {sfTimerManager} Action "project/new" 132.14 ms (1)
+Jan 08 05:08:06 symfony [info] {sfTimerManager} Database (Doctrine) 0.07 ms (7)
+Jan 08 05:08:06 symfony [info] {sfTimerManager} View "Success" for "project/new" 64.36 ms (1)
+Jan 08 05:08:06 symfony [info] {sfTimerManager} Partial "project/_form" 44.79 ms (1)
+Jan 08 05:08:13 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Jan 08 05:08:13 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:08:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:08:13 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Jan 08 05:08:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:08:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:08:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:08:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:08:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:08:13 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Jan 08 05:08:13 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:08:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:08:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:08:13 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:13 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:13 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:08:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:08:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:08:13 symfony [info] {sfWebDebugLogger} Configuration 2.25 ms (9)
+Jan 08 05:08:13 symfony [info] {sfWebDebugLogger} Factories 41.93 ms (1)
+Jan 08 05:08:13 symfony [info] {sfWebDebugLogger} Action "project/new" 120.31 ms (1)
+Jan 08 05:08:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (7)
+Jan 08 05:08:13 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 52.60 ms (1)
+Jan 08 05:08:13 symfony [info] {sfWebDebugLogger} Partial "project/_form" 38.10 ms (1)
+Jan 08 05:08:13 symfony [info] {sfTimerManager} Configuration 2.25 ms (9)
+Jan 08 05:08:13 symfony [info] {sfTimerManager} Factories 41.93 ms (1)
+Jan 08 05:08:13 symfony [info] {sfTimerManager} Action "project/new" 120.31 ms (1)
+Jan 08 05:08:13 symfony [info] {sfTimerManager} Database (Doctrine) 0.06 ms (7)
+Jan 08 05:08:13 symfony [info] {sfTimerManager} View "Success" for "project/new" 52.60 ms (1)
+Jan 08 05:08:13 symfony [info] {sfTimerManager} Partial "project/_form" 38.10 ms (1)
+Jan 08 05:08:26 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Jan 08 05:08:26 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:08:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:08:26 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Jan 08 05:08:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:08:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:08:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:08:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:08:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:08:27 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/newSuccess.php"
+Jan 08 05:08:27 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:08:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:08:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:08:27 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:27 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:08:27 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:08:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:08:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:08:27 symfony [info] {sfWebDebugLogger} Configuration 1.70 ms (9)
+Jan 08 05:08:27 symfony [info] {sfWebDebugLogger} Factories 37.42 ms (1)
+Jan 08 05:08:27 symfony [info] {sfWebDebugLogger} Action "project/new" 121.46 ms (1)
+Jan 08 05:08:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.19 ms (7)
+Jan 08 05:08:27 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 62.30 ms (1)
+Jan 08 05:08:27 symfony [info] {sfWebDebugLogger} Partial "project/_form" 43.01 ms (1)
+Jan 08 05:08:27 symfony [info] {sfTimerManager} Configuration 1.70 ms (9)
+Jan 08 05:08:27 symfony [info] {sfTimerManager} Factories 37.42 ms (1)
+Jan 08 05:08:27 symfony [info] {sfTimerManager} Action "project/new" 121.46 ms (1)
+Jan 08 05:08:27 symfony [info] {sfTimerManager} Database (Doctrine) 0.19 ms (7)
+Jan 08 05:08:27 symfony [info] {sfTimerManager} View "Success" for "project/new" 62.30 ms (1)
+Jan 08 05:08:27 symfony [info] {sfTimerManager} Partial "project/_form" 43.01 ms (1)
+Jan 08 05:55:34 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 05:55:34 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:55:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:55:34 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:55:34 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 05:55:34 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:55:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:55:34 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:55:34 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:55:34 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:55:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:55:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:55:34 symfony [info] {sfWebDebugLogger} Configuration 2.46 ms (9)
+Jan 08 05:55:34 symfony [info] {sfWebDebugLogger} Factories 78.02 ms (1)
+Jan 08 05:55:34 symfony [info] {sfWebDebugLogger} Action "project/edit" 250.14 ms (1)
+Jan 08 05:55:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.17 ms (10)
+Jan 08 05:55:34 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 79.94 ms (1)
+Jan 08 05:55:34 symfony [info] {sfWebDebugLogger} Partial "project/_form" 52.99 ms (1)
+Jan 08 05:55:34 symfony [info] {sfTimerManager} Configuration 2.46 ms (9)
+Jan 08 05:55:34 symfony [info] {sfTimerManager} Factories 78.02 ms (1)
+Jan 08 05:55:34 symfony [info] {sfTimerManager} Action "project/edit" 250.14 ms (1)
+Jan 08 05:55:34 symfony [info] {sfTimerManager} Database (Doctrine) 0.17 ms (10)
+Jan 08 05:55:34 symfony [info] {sfTimerManager} View "Success" for "project/edit" 79.94 ms (1)
+Jan 08 05:55:34 symfony [info] {sfTimerManager} Partial "project/_form" 52.99 ms (1)
+Jan 08 05:56:06 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 05:56:07 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 05:56:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 05:56:07 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 05:56:07 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 05:56:07 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 05:56:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 05:56:07 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:56:07 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 05:56:07 symfony [info] {sfFilter} render to 
+client
+Jan 08 05:56:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 05:56:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 05:56:07 symfony [info] {sfWebDebugLogger} Configuration 3.05 ms (9)
+Jan 08 05:56:07 symfony [info] {sfWebDebugLogger} Factories 98.26 ms (1)
+Jan 08 05:56:07 symfony [info] {sfWebDebugLogger} Action "project/edit" 311.85 ms (1)
+Jan 08 05:56:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.14 ms (10)
+Jan 08 05:56:07 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 87.89 ms (1)
+Jan 08 05:56:07 symfony [info] {sfWebDebugLogger} Partial "project/_form" 51.93 ms (1)
+Jan 08 05:56:07 symfony [info] {sfTimerManager} Configuration 3.05 ms (9)
+Jan 08 05:56:07 symfony [info] {sfTimerManager} Factories 98.26 ms (1)
+Jan 08 05:56:07 symfony [info] {sfTimerManager} Action "project/edit" 311.85 ms (1)
+Jan 08 05:56:07 symfony [info] {sfTimerManager} Database (Doctrine) 0.14 ms (10)
+Jan 08 05:56:07 symfony [info] {sfTimerManager} View "Success" for "project/edit" 87.89 ms (1)
+Jan 08 05:56:07 symfony [info] {sfTimerManager} Partial "project/_form" 51.93 ms (1)
+Jan 08 06:05:06 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:05:06 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:05:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:05:06 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:05:06 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:05:06 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:05:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:05:06 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:05:06 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:05:06 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:05:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:05:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:05:06 symfony [info] {sfWebDebugLogger} Configuration 2.14 ms (9)
+Jan 08 06:05:06 symfony [info] {sfWebDebugLogger} Factories 60.40 ms (1)
+Jan 08 06:05:06 symfony [info] {sfWebDebugLogger} Action "project/edit" 203.47 ms (1)
+Jan 08 06:05:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (10)
+Jan 08 06:05:06 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 67.92 ms (1)
+Jan 08 06:05:06 symfony [info] {sfWebDebugLogger} Partial "project/_form" 45.59 ms (1)
+Jan 08 06:05:06 symfony [info] {sfTimerManager} Configuration 2.14 ms (9)
+Jan 08 06:05:06 symfony [info] {sfTimerManager} Factories 60.40 ms (1)
+Jan 08 06:05:07 symfony [info] {sfTimerManager} Action "project/edit" 203.47 ms (1)
+Jan 08 06:05:07 symfony [info] {sfTimerManager} Database (Doctrine) 0.08 ms (10)
+Jan 08 06:05:07 symfony [info] {sfTimerManager} View "Success" for "project/edit" 67.92 ms (1)
+Jan 08 06:05:07 symfony [info] {sfTimerManager} Partial "project/_form" 45.59 ms (1)
+Jan 08 06:05:40 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:05:40 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:05:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:05:40 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:05:40 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:05:40 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:05:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:05:40 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:05:40 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:05:40 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:05:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:05:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:05:40 symfony [info] {sfWebDebugLogger} Configuration 2.20 ms (9)
+Jan 08 06:05:40 symfony [info] {sfWebDebugLogger} Factories 99.64 ms (1)
+Jan 08 06:05:40 symfony [info] {sfWebDebugLogger} Action "project/edit" 375.31 ms (1)
+Jan 08 06:05:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.09 ms (10)
+Jan 08 06:05:40 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 101.51 ms (1)
+Jan 08 06:05:40 symfony [info] {sfWebDebugLogger} Partial "project/_form" 55.77 ms (1)
+Jan 08 06:05:40 symfony [info] {sfTimerManager} Configuration 2.20 ms (9)
+Jan 08 06:05:40 symfony [info] {sfTimerManager} Factories 99.64 ms (1)
+Jan 08 06:05:40 symfony [info] {sfTimerManager} Action "project/edit" 375.31 ms (1)
+Jan 08 06:05:40 symfony [info] {sfTimerManager} Database (Doctrine) 0.09 ms (10)
+Jan 08 06:05:40 symfony [info] {sfTimerManager} View "Success" for "project/edit" 101.51 ms (1)
+Jan 08 06:05:40 symfony [info] {sfTimerManager} Partial "project/_form" 55.77 ms (1)
+Jan 08 06:10:11 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:10:11 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:10:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:10:11 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:10:11 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:10:11 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:10:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:10:11 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:10:11 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:10:11 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:10:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:10:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:10:11 symfony [info] {sfWebDebugLogger} Configuration 1.84 ms (9)
+Jan 08 06:10:11 symfony [info] {sfWebDebugLogger} Factories 58.62 ms (1)
+Jan 08 06:10:11 symfony [info] {sfWebDebugLogger} Action "project/edit" 226.63 ms (1)
+Jan 08 06:10:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.31 ms (10)
+Jan 08 06:10:11 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 66.07 ms (1)
+Jan 08 06:10:11 symfony [info] {sfWebDebugLogger} Partial "project/_form" 44.99 ms (1)
+Jan 08 06:10:11 symfony [info] {sfTimerManager} Configuration 1.84 ms (9)
+Jan 08 06:10:11 symfony [info] {sfTimerManager} Factories 58.62 ms (1)
+Jan 08 06:10:11 symfony [info] {sfTimerManager} Action "project/edit" 226.63 ms (1)
+Jan 08 06:10:11 symfony [info] {sfTimerManager} Database (Doctrine) 0.31 ms (10)
+Jan 08 06:10:11 symfony [info] {sfTimerManager} View "Success" for "project/edit" 66.07 ms (1)
+Jan 08 06:10:11 symfony [info] {sfTimerManager} Partial "project/_form" 44.99 ms (1)
+Jan 08 06:10:44 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:10:44 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:10:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:10:44 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:10:44 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:10:44 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:10:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:10:44 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:10:44 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:10:44 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:10:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:10:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:10:44 symfony [info] {sfWebDebugLogger} Configuration 3.95 ms (9)
+Jan 08 06:10:44 symfony [info] {sfWebDebugLogger} Factories 78.46 ms (1)
+Jan 08 06:10:44 symfony [info] {sfWebDebugLogger} Action "project/edit" 259.36 ms (1)
+Jan 08 06:10:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.15 ms (10)
+Jan 08 06:10:44 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 119.52 ms (1)
+Jan 08 06:10:44 symfony [info] {sfWebDebugLogger} Partial "project/_form" 90.93 ms (1)
+Jan 08 06:10:45 symfony [info] {sfTimerManager} Configuration 3.95 ms (9)
+Jan 08 06:10:45 symfony [info] {sfTimerManager} Factories 78.46 ms (1)
+Jan 08 06:10:45 symfony [info] {sfTimerManager} Action "project/edit" 259.36 ms (1)
+Jan 08 06:10:45 symfony [info] {sfTimerManager} Database (Doctrine) 0.15 ms (10)
+Jan 08 06:10:45 symfony [info] {sfTimerManager} View "Success" for "project/edit" 119.52 ms (1)
+Jan 08 06:10:45 symfony [info] {sfTimerManager} Partial "project/_form" 90.93 ms (1)
+Jan 08 06:12:33 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:12:33 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:12:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:12:33 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:12:33 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:12:33 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:12:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:12:33 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:12:33 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:12:33 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:12:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:12:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:12:33 symfony [info] {sfWebDebugLogger} Configuration 2.10 ms (9)
+Jan 08 06:12:33 symfony [info] {sfWebDebugLogger} Factories 59.30 ms (1)
+Jan 08 06:12:33 symfony [info] {sfWebDebugLogger} Action "project/edit" 203.21 ms (1)
+Jan 08 06:12:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (10)
+Jan 08 06:12:33 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 72.68 ms (1)
+Jan 08 06:12:33 symfony [info] {sfWebDebugLogger} Partial "project/_form" 49.06 ms (1)
+Jan 08 06:12:33 symfony [info] {sfTimerManager} Configuration 2.10 ms (9)
+Jan 08 06:12:33 symfony [info] {sfTimerManager} Factories 59.30 ms (1)
+Jan 08 06:12:33 symfony [info] {sfTimerManager} Action "project/edit" 203.21 ms (1)
+Jan 08 06:12:33 symfony [info] {sfTimerManager} Database (Doctrine) 0.10 ms (10)
+Jan 08 06:12:33 symfony [info] {sfTimerManager} View "Success" for "project/edit" 72.68 ms (1)
+Jan 08 06:12:33 symfony [info] {sfTimerManager} Partial "project/_form" 49.06 ms (1)
+Jan 08 06:12:36 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/blahblah/css/main.css with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => 'blahblah',  'css' => 'main.css',)
+Jan 08 06:12:36 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:12:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:12:36 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:12:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:12:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (blahblah)
+Jan 08 06:12:36 symfony [err] {sfError404Exception} Object project does not exist (blahblah).
+Jan 08 06:12:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 08 06:12:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:12:36 symfony [info] {sfWebDebugLogger} Configuration 14.29 ms (8)
+Jan 08 06:12:36 symfony [info] {sfWebDebugLogger} Factories 111.32 ms (1)
+Jan 08 06:12:36 symfony [info] {sfWebDebugLogger} Action "project/edit" 242.56 ms (1)
+Jan 08 06:12:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jan 08 06:13:16 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:13:16 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:13:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:13:16 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:13:16 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:13:16 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:13:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:13:16 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:13:16 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:13:16 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:13:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:13:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:13:16 symfony [info] {sfWebDebugLogger} Configuration 2.33 ms (9)
+Jan 08 06:13:16 symfony [info] {sfWebDebugLogger} Factories 73.34 ms (1)
+Jan 08 06:13:16 symfony [info] {sfWebDebugLogger} Action "project/edit" 205.50 ms (1)
+Jan 08 06:13:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.47 ms (10)
+Jan 08 06:13:16 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 73.20 ms (1)
+Jan 08 06:13:16 symfony [info] {sfWebDebugLogger} Partial "project/_form" 49.77 ms (1)
+Jan 08 06:13:16 symfony [info] {sfTimerManager} Configuration 2.33 ms (9)
+Jan 08 06:13:16 symfony [info] {sfTimerManager} Factories 73.34 ms (1)
+Jan 08 06:13:16 symfony [info] {sfTimerManager} Action "project/edit" 205.50 ms (1)
+Jan 08 06:13:16 symfony [info] {sfTimerManager} Database (Doctrine) 0.47 ms (10)
+Jan 08 06:13:16 symfony [info] {sfTimerManager} View "Success" for "project/edit" 73.20 ms (1)
+Jan 08 06:13:16 symfony [info] {sfTimerManager} Partial "project/_form" 49.77 ms (1)
+Jan 08 06:13:19 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/blahblah/css/main.css with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => 'blahblah',  'css' => 'main.css',)
+Jan 08 06:13:19 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:13:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:13:19 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:13:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:13:19 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (blahblah)
+Jan 08 06:13:19 symfony [err] {sfError404Exception} Object project does not exist (blahblah).
+Jan 08 06:13:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 08 06:13:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:13:19 symfony [info] {sfWebDebugLogger} Configuration 1.76 ms (8)
+Jan 08 06:13:19 symfony [info] {sfWebDebugLogger} Factories 146.86 ms (1)
+Jan 08 06:13:19 symfony [info] {sfWebDebugLogger} Action "project/edit" 330.32 ms (1)
+Jan 08 06:13:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jan 08 06:14:06 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:14:06 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:14:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:14:06 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:14:07 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:14:07 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:14:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:14:07 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:14:07 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:14:07 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:14:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:14:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:14:07 symfony [info] {sfWebDebugLogger} Configuration 24.40 ms (10)
+Jan 08 06:14:07 symfony [info] {sfWebDebugLogger} Factories 58.86 ms (1)
+Jan 08 06:14:07 symfony [info] {sfWebDebugLogger} Action "project/edit" 192.56 ms (1)
+Jan 08 06:14:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.11 ms (10)
+Jan 08 06:14:07 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 90.98 ms (1)
+Jan 08 06:14:07 symfony [info] {sfWebDebugLogger} Partial "project/_form" 44.33 ms (1)
+Jan 08 06:14:07 symfony [info] {sfTimerManager} Configuration 24.40 ms (10)
+Jan 08 06:14:07 symfony [info] {sfTimerManager} Factories 58.86 ms (1)
+Jan 08 06:14:07 symfony [info] {sfTimerManager} Action "project/edit" 192.56 ms (1)
+Jan 08 06:14:07 symfony [info] {sfTimerManager} Database (Doctrine) 0.11 ms (10)
+Jan 08 06:14:07 symfony [info] {sfTimerManager} View "Success" for "project/edit" 90.98 ms (1)
+Jan 08 06:14:07 symfony [info] {sfTimerManager} Partial "project/_form" 44.33 ms (1)
+Jan 08 06:14:10 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/blahblah/css/main.css with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => 'blahblah',  'css' => 'main.css',)
+Jan 08 06:14:10 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:14:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:14:10 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:14:10 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/blahblah/js/foo.js with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => 'blahblah',  'js' => 'foo.js',)
+Jan 08 06:14:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:14:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (blahblah)
+Jan 08 06:14:10 symfony [err] {sfError404Exception} Object project does not exist (blahblah).
+Jan 08 06:14:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 08 06:14:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:14:10 symfony [info] {sfWebDebugLogger} Configuration 1.81 ms (8)
+Jan 08 06:14:10 symfony [info] {sfWebDebugLogger} Factories 214.43 ms (1)
+Jan 08 06:14:10 symfony [info] {sfWebDebugLogger} Action "project/edit" 167.94 ms (1)
+Jan 08 06:14:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.16 ms (2)
+Jan 08 06:14:10 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:14:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:14:10 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:14:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:14:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (blahblah)
+Jan 08 06:14:10 symfony [err] {sfError404Exception} Object project does not exist (blahblah).
+Jan 08 06:14:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 08 06:14:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:14:11 symfony [info] {sfWebDebugLogger} Configuration 3.13 ms (8)
+Jan 08 06:14:11 symfony [info] {sfWebDebugLogger} Factories 328.82 ms (1)
+Jan 08 06:14:11 symfony [info] {sfWebDebugLogger} Action "project/edit" 193.40 ms (1)
+Jan 08 06:14:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jan 08 06:15:42 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:15:42 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:15:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:15:42 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:15:42 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:15:42 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:15:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:15:43 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:15:43 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:15:43 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:15:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:15:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:15:43 symfony [info] {sfWebDebugLogger} Configuration 2.42 ms (9)
+Jan 08 06:15:43 symfony [info] {sfWebDebugLogger} Factories 55.60 ms (1)
+Jan 08 06:15:43 symfony [info] {sfWebDebugLogger} Action "project/edit" 224.94 ms (1)
+Jan 08 06:15:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (10)
+Jan 08 06:15:43 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 66.76 ms (1)
+Jan 08 06:15:43 symfony [info] {sfWebDebugLogger} Partial "project/_form" 44.06 ms (1)
+Jan 08 06:15:43 symfony [info] {sfTimerManager} Configuration 2.42 ms (9)
+Jan 08 06:15:43 symfony [info] {sfTimerManager} Factories 55.60 ms (1)
+Jan 08 06:15:43 symfony [info] {sfTimerManager} Action "project/edit" 224.94 ms (1)
+Jan 08 06:15:43 symfony [info] {sfTimerManager} Database (Doctrine) 0.10 ms (10)
+Jan 08 06:15:43 symfony [info] {sfTimerManager} View "Success" for "project/edit" 66.76 ms (1)
+Jan 08 06:15:43 symfony [info] {sfTimerManager} Partial "project/_form" 44.06 ms (1)
+Jan 08 06:24:48 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:24:48 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:24:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:24:48 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:24:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:24:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:24:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:24:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:24:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:24:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:24:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:24:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:24:49 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:24:49 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:25:07 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:25:07 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:25:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:25:07 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:25:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:25:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:25:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:25:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:25:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:25:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:25:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:25:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:25:08 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:25:08 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:25:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:25:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:25:08 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:25:08 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:25:08 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:25:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:25:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:25:08 symfony [info] {sfWebDebugLogger} Configuration 2.08 ms (9)
+Jan 08 06:25:08 symfony [info] {sfWebDebugLogger} Factories 58.11 ms (1)
+Jan 08 06:25:08 symfony [info] {sfWebDebugLogger} Action "project/edit" 210.70 ms (1)
+Jan 08 06:25:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.25 ms (10)
+Jan 08 06:25:08 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 62.11 ms (1)
+Jan 08 06:25:08 symfony [info] {sfWebDebugLogger} Partial "project/_form" 42.06 ms (1)
+Jan 08 06:25:08 symfony [info] {sfTimerManager} Configuration 2.08 ms (9)
+Jan 08 06:25:08 symfony [info] {sfTimerManager} Factories 58.11 ms (1)
+Jan 08 06:25:08 symfony [info] {sfTimerManager} Action "project/edit" 210.70 ms (1)
+Jan 08 06:25:08 symfony [info] {sfTimerManager} Database (Doctrine) 0.25 ms (10)
+Jan 08 06:25:08 symfony [info] {sfTimerManager} View "Success" for "project/edit" 62.11 ms (1)
+Jan 08 06:25:08 symfony [info] {sfTimerManager} Partial "project/_form" 42.06 ms (1)
+Jan 08 06:26:18 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:26:18 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:26:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:26:18 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:26:18 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:26:18 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:26:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:26:18 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:26:18 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:26:18 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:26:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:26:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:26:18 symfony [info] {sfWebDebugLogger} Configuration 2.19 ms (9)
+Jan 08 06:26:18 symfony [info] {sfWebDebugLogger} Factories 60.41 ms (1)
+Jan 08 06:26:18 symfony [info] {sfWebDebugLogger} Action "project/edit" 237.92 ms (1)
+Jan 08 06:26:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (10)
+Jan 08 06:26:18 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 154.78 ms (1)
+Jan 08 06:26:18 symfony [info] {sfWebDebugLogger} Partial "project/_form" 67.97 ms (1)
+Jan 08 06:26:18 symfony [info] {sfTimerManager} Configuration 2.19 ms (9)
+Jan 08 06:26:18 symfony [info] {sfTimerManager} Factories 60.41 ms (1)
+Jan 08 06:26:18 symfony [info] {sfTimerManager} Action "project/edit" 237.92 ms (1)
+Jan 08 06:26:18 symfony [info] {sfTimerManager} Database (Doctrine) 0.10 ms (10)
+Jan 08 06:26:18 symfony [info] {sfTimerManager} View "Success" for "project/edit" 154.78 ms (1)
+Jan 08 06:26:18 symfony [info] {sfTimerManager} Partial "project/_form" 67.97 ms (1)
+Jan 08 06:27:22 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:27:22 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:27:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:27:22 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:27:22 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:27:22 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:27:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:27:22 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:27:22 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:27:22 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:27:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:27:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:27:22 symfony [info] {sfWebDebugLogger} Configuration 2.09 ms (9)
+Jan 08 06:27:22 symfony [info] {sfWebDebugLogger} Factories 215.56 ms (1)
+Jan 08 06:27:22 symfony [info] {sfWebDebugLogger} Action "project/edit" 236.79 ms (1)
+Jan 08 06:27:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.64 ms (10)
+Jan 08 06:27:22 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 118.33 ms (1)
+Jan 08 06:27:22 symfony [info] {sfWebDebugLogger} Partial "project/_form" 78.20 ms (1)
+Jan 08 06:27:22 symfony [info] {sfTimerManager} Configuration 2.09 ms (9)
+Jan 08 06:27:22 symfony [info] {sfTimerManager} Factories 215.56 ms (1)
+Jan 08 06:27:22 symfony [info] {sfTimerManager} Action "project/edit" 236.79 ms (1)
+Jan 08 06:27:22 symfony [info] {sfTimerManager} Database (Doctrine) 0.64 ms (10)
+Jan 08 06:27:22 symfony [info] {sfTimerManager} View "Success" for "project/edit" 118.33 ms (1)
+Jan 08 06:27:22 symfony [info] {sfTimerManager} Partial "project/_form" 78.20 ms (1)
+Jan 08 06:29:10 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:29:10 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:29:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:29:10 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:29:10 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:29:10 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:29:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:29:10 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:29:10 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:29:10 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:29:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:29:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:29:10 symfony [info] {sfWebDebugLogger} Configuration 3.90 ms (9)
+Jan 08 06:29:10 symfony [info] {sfWebDebugLogger} Factories 84.86 ms (1)
+Jan 08 06:29:10 symfony [info] {sfWebDebugLogger} Action "project/edit" 205.20 ms (1)
+Jan 08 06:29:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (10)
+Jan 08 06:29:10 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 91.12 ms (1)
+Jan 08 06:29:10 symfony [info] {sfWebDebugLogger} Partial "project/_form" 48.34 ms (1)
+Jan 08 06:29:10 symfony [info] {sfTimerManager} Configuration 3.90 ms (9)
+Jan 08 06:29:10 symfony [info] {sfTimerManager} Factories 84.86 ms (1)
+Jan 08 06:29:10 symfony [info] {sfTimerManager} Action "project/edit" 205.20 ms (1)
+Jan 08 06:29:10 symfony [info] {sfTimerManager} Database (Doctrine) 0.10 ms (10)
+Jan 08 06:29:10 symfony [info] {sfTimerManager} View "Success" for "project/edit" 91.12 ms (1)
+Jan 08 06:29:10 symfony [info] {sfTimerManager} Partial "project/_form" 48.34 ms (1)
+Jan 08 06:32:03 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:32:03 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:32:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:32:03 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:32:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:32:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:32:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:32:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:32:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:32:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:32:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:32:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:32:03 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:32:03 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:32:22 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:32:22 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:32:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:32:22 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:32:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:32:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:32:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:32:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:32:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:32:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:32:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:32:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:32:22 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:32:22 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:32:39 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:32:39 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:32:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:32:39 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:32:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:32:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:32:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:32:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:32:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:32:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:32:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:32:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:32:39 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:32:39 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:32:59 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:32:59 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:32:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:32:59 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:32:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:33:00 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:33:00 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:33:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:33:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:33:00 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:33:00 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:33:00 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:33:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:33:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:33:00 symfony [info] {sfWebDebugLogger} Configuration 1.90 ms (9)
+Jan 08 06:33:00 symfony [info] {sfWebDebugLogger} Factories 56.98 ms (1)
+Jan 08 06:33:00 symfony [info] {sfWebDebugLogger} Action "project/edit" 197.69 ms (1)
+Jan 08 06:33:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.12 ms (10)
+Jan 08 06:33:00 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 65.30 ms (1)
+Jan 08 06:33:00 symfony [info] {sfWebDebugLogger} Partial "project/_form" 43.82 ms (1)
+Jan 08 06:33:00 symfony [info] {sfTimerManager} Configuration 1.90 ms (9)
+Jan 08 06:33:00 symfony [info] {sfTimerManager} Factories 56.98 ms (1)
+Jan 08 06:33:00 symfony [info] {sfTimerManager} Action "project/edit" 197.69 ms (1)
+Jan 08 06:33:00 symfony [info] {sfTimerManager} Database (Doctrine) 0.12 ms (10)
+Jan 08 06:33:00 symfony [info] {sfTimerManager} View "Success" for "project/edit" 65.30 ms (1)
+Jan 08 06:33:00 symfony [info] {sfTimerManager} Partial "project/_form" 43.82 ms (1)
+Jan 08 06:33:52 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:33:52 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:33:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:33:52 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:33:52 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:33:52 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:33:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:33:52 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:33:52 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:33:52 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:33:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:33:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:33:52 symfony [info] {sfWebDebugLogger} Configuration 2.09 ms (9)
+Jan 08 06:33:52 symfony [info] {sfWebDebugLogger} Factories 61.17 ms (1)
+Jan 08 06:33:52 symfony [info] {sfWebDebugLogger} Action "project/edit" 198.46 ms (1)
+Jan 08 06:33:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.12 ms (10)
+Jan 08 06:33:52 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 72.61 ms (1)
+Jan 08 06:33:52 symfony [info] {sfWebDebugLogger} Partial "project/_form" 50.86 ms (1)
+Jan 08 06:33:52 symfony [info] {sfTimerManager} Configuration 2.09 ms (9)
+Jan 08 06:33:52 symfony [info] {sfTimerManager} Factories 61.17 ms (1)
+Jan 08 06:33:52 symfony [info] {sfTimerManager} Action "project/edit" 198.46 ms (1)
+Jan 08 06:33:52 symfony [info] {sfTimerManager} Database (Doctrine) 0.12 ms (10)
+Jan 08 06:33:52 symfony [info] {sfTimerManager} View "Success" for "project/edit" 72.61 ms (1)
+Jan 08 06:33:52 symfony [info] {sfTimerManager} Partial "project/_form" 50.86 ms (1)
+Jan 08 06:34:25 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:34:25 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:34:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:34:25 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:34:25 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:34:25 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:34:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:34:25 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:34:25 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:34:25 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:34:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:34:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:34:25 symfony [info] {sfWebDebugLogger} Configuration 2.22 ms (9)
+Jan 08 06:34:25 symfony [info] {sfWebDebugLogger} Factories 72.84 ms (1)
+Jan 08 06:34:25 symfony [info] {sfWebDebugLogger} Action "project/edit" 314.00 ms (1)
+Jan 08 06:34:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.28 ms (10)
+Jan 08 06:34:25 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 96.30 ms (1)
+Jan 08 06:34:25 symfony [info] {sfWebDebugLogger} Partial "project/_form" 61.09 ms (1)
+Jan 08 06:34:25 symfony [info] {sfTimerManager} Configuration 2.22 ms (9)
+Jan 08 06:34:25 symfony [info] {sfTimerManager} Factories 72.84 ms (1)
+Jan 08 06:34:25 symfony [info] {sfTimerManager} Action "project/edit" 314.00 ms (1)
+Jan 08 06:34:25 symfony [info] {sfTimerManager} Database (Doctrine) 0.28 ms (10)
+Jan 08 06:34:25 symfony [info] {sfTimerManager} View "Success" for "project/edit" 96.30 ms (1)
+Jan 08 06:34:25 symfony [info] {sfTimerManager} Partial "project/_form" 61.09 ms (1)
+Jan 08 06:35:11 symfony [info] {sfPatternRouting} Match route "default2" (/Special:FlowDreamfish/:module/:action/*) for /Special:FlowDreamfish/project/edit/id/1 with parameters array (  'module' => 'project',  'action' => 'edit',  'id' => '1',)
+Jan 08 06:35:11 symfony [info] {sfFilterChain} Executing filter "mediaWikiFilter"
+Jan 08 06:35:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 08 06:35:11 symfony [info] {projectActions} Call "projectActions->executeEdit()"
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.request AS p__request, p.deadline AS p__deadline, p.description AS p__description, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM project p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Security)
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Achievement)
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Learning)
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v WHERE (v.type = ?) - (Global)
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type, p.project_id AS p__project_id, p.value_id AS p__value_id FROM value v LEFT JOIN project_value p ON v.id = p.value_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, p.project_id AS p__project_id, p.skill_id AS p__skill_id FROM skill s LEFT JOIN project_skill p ON s.id = p.skill_id WHERE (p.project_id IN (?)) - (1)
+Jan 08 06:35:11 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/editSuccess.php"
+Jan 08 06:35:11 symfony [info] {sfPartialView} Render "/home/symfony/dreamfish/apps/frontend/modules/project/templates/_form.php"
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM skill s - ()
+Jan 08 06:35:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT v.id AS v__id, v.name AS v__name, v.type AS v__type FROM value v - ()
+Jan 08 06:35:11 symfony [info] {sfPHPView} Decorate content with "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:35:11 symfony [info] {sfPHPView} Render "/home/symfony/dreamfish/apps/frontend/templates/layout.php"
+Jan 08 06:35:11 symfony [info] {sfFilter} render to 
+client
+Jan 08 06:35:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 08 06:35:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 08 06:35:11 symfony [info] {sfWebDebugLogger} Configuration 2.19 ms (9)
+Jan 08 06:35:11 symfony [info] {sfWebDebugLogger} Factories 55.48 ms (1)
+Jan 08 06:35:11 symfony [info] {sfWebDebugLogger} Action "project/edit" 223.52 ms (1)
+Jan 08 06:35:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.13 ms (10)
+Jan 08 06:35:11 symfony [info] {sfWebDebugLogger} View "Success" for "project/edit" 75.54 ms (1)
+Jan 08 06:35:11 symfony [info] {sfWebDebugLogger} Partial "project/_form" 51.67 ms (1)
+Jan 08 06:35:11 symfony [info] {sfTimerManager} Configuration 2.19 ms (9)
+Jan 08 06:35:11 symfony [info] {sfTimerManager} Factories 55.48 ms (1)
+Jan 08 06:35:11 symfony [info] {sfTimerManager} Action "project/edit" 223.52 ms (1)
+Jan 08 06:35:11 symfony [info] {sfTimerManager} Database (Doctrine) 0.13 ms (10)
+Jan 08 06:35:11 symfony [info] {sfTimerManager} View "Success" for "project/edit" 75.54 ms (1)
+Jan 08 06:35:11 symfony [info] {sfTimerManager} Partial "project/_form" 51.67 ms (1)
