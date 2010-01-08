@@ -17,7 +17,7 @@ function run()
 //sfConfig::set('sf_web_js_dir_name', '/sjs');
 //sfConfig::set('sf_web_css_dir_name', '/scss');
 $context = sfContext::createInstance($configuration);
-$context->getRequest()->setRelativeUrlRoot("");
+$context->getRequest()->setRelativeUrlRoot("/symfony/dreamfish/web");
 
 $context->dispatch();
 
