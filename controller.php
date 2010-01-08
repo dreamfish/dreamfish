@@ -11,18 +11,12 @@ function output($text)
 
 function run()
 {
-#  output("foo2");
 
  $configuration = ProjectConfiguration::getApplicationConfiguration('frontend', 'dev', true);
-//sfConfig::set('sf_web_js_dir_name', '/sjs');
-//sfConfig::set('sf_web_css_dir_name', '/scss');
-$context = sfContext::createInstance($configuration);
-$context->getRequest()->setRelativeUrlRoot("/symfony/dreamfish/web");
+ $context = sfContext::createInstance($configuration);
+ $context->getRequest()->setRelativeUrlRoot("/symfony/dreamfish/web");
 
-$context->dispatch();
-
-  sfConfig::set('sf_web_js_dir_name', '/sjs');
-  sfConfig::set('sf_web_css_dir_name', '/scss');
+ $context->dispatch();
 }
 
 
