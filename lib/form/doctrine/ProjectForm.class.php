@@ -12,14 +12,14 @@ class ProjectForm extends BaseProjectForm
 {
   public function configure()
   {
+	  global $wgUser;
+		$this->foo2 = "blah";
 		unset(
 			$this['created_at'],
 			$this['updated_at']
 		);
 
-		$this->widgetSchema->setLabel('name', 'Project name <small>(what project is the request for?)</small>');
-		$this->widgetSchema->setLabel('request', 'Request <small>(what kind of service?)</small>');
-		$this->widgetSchema->setLabel('deadline', 'When do you want responses by?');
+		$this->widgetSchema->setLabel('name', 'Project name <small>(what needs to get done?)</small>');
 		$this->widgetSchema->setLabel('description', 'Describe your project <small>(what are the goals, tasks and time estimate?)</small>');
 
     $filter =  create_function('$cs', '$ret = Array(); foreach($cs as $c) { $ret[$c["id"]] = $c["name"]; }return $ret;');
@@ -49,15 +49,6 @@ class ProjectForm extends BaseProjectForm
       'choices' => $filter(Doctrine::getTable('Value')->findByDql('type = ?', array('Global'))->toArray())
       , 'label' => 'Global'
       , 'multiple' => true));
-
-
-/*    
-     $this->widgetSchema['values_list'] = new sfWidgetFormChoice(array(
-           'choices' => $filter(Doctrine::getTable('Value')->findAll()->toArray())
-           , 'label' => 'Values'
-           , 'multiple' => true));
-   
-*/
 
   }
   public function updateDefaultsFromObject()

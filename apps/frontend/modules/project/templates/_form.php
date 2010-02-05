@@ -4,6 +4,18 @@
 <?php echo javascript_include_tag('http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'); ?>
 <?php echo javascript_include_tag('date.js', 'jquery.datePicker.js', 'datepicker.js') ?>
 
+<?php 
+$user =  get_slot('user');
+if (isset($user) && is_object($user) && $user->isLoggedIn()) {
+
+  echo "Welcome " . $user->getName();
+
+}
+else { 
+   echo "<h1>Please log in first!</h1>";
+
+}
+?>
 <form action="<?php echo url_for('project/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id='.$form->getObject()->getId() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
 <?php if (!$form->getObject()->isNew()): ?>
 <input type="hidden" name="sf_method" value="put" />
@@ -26,8 +38,6 @@
     <?php echo $form['_csrf_token'] ?> 
 
     <?php echo $form['name']->renderRow() ?>
-    <?php echo $form['request']->renderRow() ?>
-    <?php echo $form['deadline']->renderRow() ?>
     <?php echo $form['description']->renderRow() ?>
     <?php echo $form['skills_list']->renderRow() ?>
     <tr>

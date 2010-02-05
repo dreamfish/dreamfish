@@ -9,10 +9,6 @@
       <td><?php echo $project->getName() ?></td>
     </tr>
     <tr>
-      <th>Deadline:</th>
-      <td><?php echo $project->getDeadline() ?></td>
-    </tr>
-    <tr>
       <th>Description:</th>
       <td><?php echo $project->getDescription() ?></td>
     </tr>
@@ -26,7 +22,9 @@
     </tr>
   </tbody>
 </table>
-
+<?php foreach($project->getRequests() as $req): ?>
+<?php echo $req->getRequest() ?> <?php echo $req->getDeadline() ?><br>
+<?php endforeach; ?>
 <hr />
 
 <a href="<?php echo url_for('project/edit?id='.$project->getId()) ?>">Edit</a>

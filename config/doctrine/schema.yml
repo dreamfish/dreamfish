@@ -7,8 +7,7 @@ Project:
       primary: true
       autoincrement: true
     name: { type: string(255), notnull: true }
-    request: { type: string(255), notnull: true }
-    deadline: { type: date, notnull: true }
+    user_name: { type: string(255), notnull: true }
     description: { type: string(), notnull: true }
     created_at: { type: timestamp(25), notnull: true }
     updated_at: { type: timestamp(25), notnull: true }
@@ -25,6 +24,21 @@ Project:
       refClass: ProjectValue
       local: project_id
       foreign: value_id
+    Requests:
+      type: many
+      class: ProjectRequest
+      foreignAlias: ProjectRequests
+      local: id
+      foreign: project_id
+
+ProjectRequest:
+  columns:
+    id: { type: integer(8), autoincrement: true, primary:true }
+    project_id: { type: integer, notnull: true }
+    request: { type: string(255) }
+    deadline: { type: date }
+  relations:
+    Project: { local: project_id, foreign: id }
 
 Skill:
   columns:

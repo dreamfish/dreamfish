@@ -7,36 +7,36 @@
  * 
  * @property integer $id
  * @property string $name
- * @property string $request
- * @property date $deadline
+ * @property string $user_name
  * @property string $description
  * @property timestamp $created_at
  * @property timestamp $updated_at
  * @property Doctrine_Collection $Skills
  * @property Doctrine_Collection $Values
+ * @property Doctrine_Collection $Requests
  * @property Doctrine_Collection $ProjectSkills
  * @property Doctrine_Collection $ProjectValues
  * 
  * @method integer             getId()            Returns the current record's "id" value
  * @method string              getName()          Returns the current record's "name" value
- * @method string              getRequest()       Returns the current record's "request" value
- * @method date                getDeadline()      Returns the current record's "deadline" value
+ * @method string              getUserName()      Returns the current record's "user_name" value
  * @method string              getDescription()   Returns the current record's "description" value
  * @method timestamp           getCreatedAt()     Returns the current record's "created_at" value
  * @method timestamp           getUpdatedAt()     Returns the current record's "updated_at" value
  * @method Doctrine_Collection getSkills()        Returns the current record's "Skills" collection
  * @method Doctrine_Collection getValues()        Returns the current record's "Values" collection
+ * @method Doctrine_Collection getRequests()      Returns the current record's "Requests" collection
  * @method Doctrine_Collection getProjectSkills() Returns the current record's "ProjectSkills" collection
  * @method Doctrine_Collection getProjectValues() Returns the current record's "ProjectValues" collection
  * @method Project             setId()            Sets the current record's "id" value
  * @method Project             setName()          Sets the current record's "name" value
- * @method Project             setRequest()       Sets the current record's "request" value
- * @method Project             setDeadline()      Sets the current record's "deadline" value
+ * @method Project             setUserName()      Sets the current record's "user_name" value
  * @method Project             setDescription()   Sets the current record's "description" value
  * @method Project             setCreatedAt()     Sets the current record's "created_at" value
  * @method Project             setUpdatedAt()     Sets the current record's "updated_at" value
  * @method Project             setSkills()        Sets the current record's "Skills" collection
  * @method Project             setValues()        Sets the current record's "Values" collection
+ * @method Project             setRequests()      Sets the current record's "Requests" collection
  * @method Project             setProjectSkills() Sets the current record's "ProjectSkills" collection
  * @method Project             setProjectValues() Sets the current record's "ProjectValues" collection
  * 
@@ -63,14 +63,10 @@ abstract class BaseProject extends sfDoctrineRecord
              'notnull' => true,
              'length' => '255',
              ));
-        $this->hasColumn('request', 'string', 255, array(
+        $this->hasColumn('user_name', 'string', 255, array(
              'type' => 'string',
              'notnull' => true,
              'length' => '255',
-             ));
-        $this->hasColumn('deadline', 'date', null, array(
-             'type' => 'date',
-             'notnull' => true,
              ));
         $this->hasColumn('description', 'string', null, array(
              'type' => 'string',
@@ -101,6 +97,10 @@ abstract class BaseProject extends sfDoctrineRecord
              'refClass' => 'ProjectValue',
              'local' => 'project_id',
              'foreign' => 'value_id'));
+
+        $this->hasMany('ProjectRequest as Requests', array(
+             'local' => 'id',
+             'foreign' => 'project_id'));
 
         $this->hasMany('ProjectSkill as ProjectSkills', array(
              'local' => 'id',

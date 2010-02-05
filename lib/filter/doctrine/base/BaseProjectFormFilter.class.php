@@ -14,8 +14,7 @@ abstract class BaseProjectFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'name'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'request'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'deadline'    => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'user_name'   => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'description' => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'created_at'  => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'updated_at'  => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
@@ -25,8 +24,7 @@ abstract class BaseProjectFormFilter extends BaseFormFilterDoctrine
 
     $this->setValidators(array(
       'name'        => new sfValidatorPass(array('required' => false)),
-      'request'     => new sfValidatorPass(array('required' => false)),
-      'deadline'    => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'user_name'   => new sfValidatorPass(array('required' => false)),
       'description' => new sfValidatorPass(array('required' => false)),
       'created_at'  => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
       'updated_at'  => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
@@ -85,8 +83,7 @@ abstract class BaseProjectFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'          => 'Number',
       'name'        => 'Text',
-      'request'     => 'Text',
-      'deadline'    => 'Date',
+      'user_name'   => 'Text',
       'description' => 'Text',
       'created_at'  => 'Date',
       'updated_at'  => 'Date',

@@ -36,8 +36,7 @@ You have a project to do -> <a href="<?php echo url_for('project/new') ?>">Reque
   <thead>
     <tr>
       <th>Dreamfisher</th>
-      <th>Project Requests</th>
-      <th>Reply by</th>
+      <th>Project Name</th>
     </tr>
   </thead>
   <tbody>
@@ -51,17 +50,11 @@ You have a project to do -> <a href="<?php echo url_for('project/new') ?>">Reque
 
       <td>
       
-        <?php echo $project->getRequest() ?>
+        <?php echo $project->getName() ?>
         <a href="<?php echo url_for('project/show?id='.$project->getId()) ?>">View</a></td>
       
       </td>
 
-      <td style="width:75px">
-        <?php echo $project->getDeadline() ?><br>
-        <a href="<?php echo url_for('project/reply?id='.$project->getId())?>">
-          Reply
-        </a>
-      </td>
     </tr>
     <?php endforeach; ?>
   </tbody>

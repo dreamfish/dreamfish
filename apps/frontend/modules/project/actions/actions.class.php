@@ -25,6 +25,8 @@ class projectActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
+		global $wgUser;
+		$this->getResponse()->setSlot('user', $wgUser);
     $this->form = new ProjectForm();
   }
 
@@ -33,14 +35,13 @@ class projectActions extends sfActions
     $this->forward404Unless($request->isMethod(sfRequest::POST));
 
     $this->form = new ProjectForm();
-
     $this->processForm($request, $this->form);
-
     $this->setTemplate('new');
   }
 
   public function executeEdit(sfWebRequest $request)
   {
+		$this->user = $wgUser;
     $this->forward404Unless($project = Doctrine::getTable('Project')->find(array($request->getParameter('id'))), sprintf('Object project does not exist (%s).', $request->getParameter('id')));
     $this->form = new ProjectForm($project);
   }
@@ -73,21 +74,30 @@ class projectActions extends sfActions
  
  		$valueList = array("security", "achievement", "learning", "global");
 
+
 		foreach($valueList as $valueItem)
 		{
 			if (isset($values["value_".$valueItem."_list"])) 
 				$values["values_list"] = array_merge($values["values_list"], $values["value_".$valueItem."_list"]);
 				unset($values["value_".$valueItem."_list"]);
 		}
+		
+		//todo: change to helper library
+		global $wgUser;
+		$values['user_name'] = $wgUser->getName();
+
 		$form->bind($values);
+
     if ($form->isValid())
     {
 			$project = $form->save();
 			$this->getUser()->setFlash('success', 'Project Saved!');
 			$this->redirect('project/index');
-      //$this->redirect('project/edit?id='.$project->getId());
-			
     }
-
+		else {
+			//uncomment for debugging
+			//echo $form->getErrorSchema();
+			//die;
+		}
   }
 }
