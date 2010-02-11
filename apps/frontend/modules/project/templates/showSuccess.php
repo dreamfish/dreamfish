@@ -1,27 +1,11 @@
-<table>
-  <tbody>
-    <tr>
-      <th>Id:</th>
-      <td><?php echo $project->getId() ?></td>
-    </tr>
-    <tr>
-      <th>Name:</th>
-      <td><?php echo $project->getName() ?></td>
-    </tr>
-    <tr>
-      <th>Description:</th>
-      <td><?php echo $project->getDescription() ?></td>
-    </tr>
-    <tr>
-      <th>Created at:</th>
-      <td><?php echo $project->getCreatedAt() ?></td>
-    </tr>
-    <tr>
-      <th>Updated at:</th>
-      <td><?php echo $project->getUpdatedAt() ?></td>
-    </tr>
-  </tbody>
-</table>
+<h1><?php echo $project->getName() ?></h1>
+<p><?php echo $project->getDescription() ?></p>
+<p>      
+Created at: <?php echo $project->getCreatedAt() ?>
+</p>
+<p>
+Updated at: <?php echo $project->getUpdatedAt() ?>
+</p>
 <?php foreach($project->getRequests() as $req): ?>
 <?php echo $req->getRequest() ?> <?php echo $req->getDeadline() ?><br>
 <?php endforeach; ?>

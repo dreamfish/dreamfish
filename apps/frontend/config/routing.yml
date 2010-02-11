@@ -19,6 +19,10 @@ default2:
   url: /Special:FlowDreamfish/:module/:action/*
   param: { module: project, action: index }
 
+default4:
+  url: /Special:FlowDreamfish/:module/
+  param: {module: project, action: index }
+
 default3:
   url: /:module/:action/*
 

@@ -25,8 +25,8 @@ class projectActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
-		global $wgUser;
-		$this->getResponse()->setSlot('user', $wgUser);
+    global $wgUser;
+    $this->getResponse()->setSlot('user', $wgUser);
     $this->form = new ProjectForm();
   }
 
@@ -41,7 +41,7 @@ class projectActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-		$this->user = $wgUser;
+    $this->user = $wgUser;
     $this->forward404Unless($project = Doctrine::getTable('Project')->find(array($request->getParameter('id'))), sprintf('Object project does not exist (%s).', $request->getParameter('id')));
     $this->form = new ProjectForm($project);
   }
@@ -72,32 +72,32 @@ class projectActions extends sfActions
     $values = $request->getParameter($form->getName());
     $values["values_list"] = array();
  
- 		$valueList = array("security", "achievement", "learning", "global");
+    $valueList = array("security", "achievement", "learning", "global");
 
 
-		foreach($valueList as $valueItem)
-		{
-			if (isset($values["value_".$valueItem."_list"])) 
-				$values["values_list"] = array_merge($values["values_list"], $values["value_".$valueItem."_list"]);
-				unset($values["value_".$valueItem."_list"]);
-		}
-		
-		//todo: change to helper library
-		global $wgUser;
-		$values['user_name'] = $wgUser->getName();
+    foreach($valueList as $valueItem)
+    {
+        if (isset($values["value_".$valueItem."_list"])) 
+            $values["values_list"] = array_merge($values["values_list"], $values["value_".$valueItem."_list"]);
+	unset($values["value_".$valueItem."_list"]);
+    }
+    
+    //todo: change to helper library
+    global $wgUser;
+    $values['user_name'] = $wgUser->getName();
 
-		$form->bind($values);
+    $form->bind($values);
 
     if ($form->isValid())
     {
-			$project = $form->save();
-			$this->getUser()->setFlash('success', 'Project Saved!');
-			$this->redirect('project/index');
+        $project = $form->save();
+        $this->getUser()->setFlash('success', 'Project Saved!');
+        $this->redirect('project/index');
     }
-		else {
-			//uncomment for debugging
-			//echo $form->getErrorSchema();
-			//die;
-		}
+    else {
+            //uncomment for debugging
+            //echo $form->getErrorSchema();
+            //die;
+    }
   }
 }

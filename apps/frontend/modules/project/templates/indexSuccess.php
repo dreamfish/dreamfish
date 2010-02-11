@@ -26,7 +26,7 @@ You have a project to do -> <a href="<?php echo url_for('project/new') ?>">Reque
 </span>
 
 <div id="project-tabs">
-<a class="selected" href="<?php echo url_for('project/')?>">Project Requests</a> 
+<a class="selected" href="<?php echo url_for('project/index')?>">Project Requests</a> 
 <a href="<?php echo url_for('project/all')?>">All Projects</a>
 </div>
 <br style="clear: both">
